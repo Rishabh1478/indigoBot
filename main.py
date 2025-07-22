@@ -1,3 +1,37 @@
+import subprocess
+import shutil
+import sys
+import os
+
+def ensure_playwright_browsers():
+    """Installs Playwright browsers if not present. Only runs on Windows."""
+    # Check if the browser executable exists in Playwright's cache
+    win_chromium_path = os.path.expanduser(
+        "~\\AppData\\Local\\ms-playwright\\chromium-*\\chrome-win\\chrome.exe"
+    )
+    if sys.platform.startswith("win"):
+        # Quick check for at least one Chrome
+        import glob
+        browser_candidates = glob.glob(win_chromium_path)
+        if browser_candidates:
+            return  # Browsers exist
+
+        # Otherwise, install Chromium
+        try:
+            print("Setting up Playwright browsers (one-time)...")
+            result = subprocess.run(
+                [sys.executable, "-m", "playwright", "install", "chromium"],
+                capture_output=True, text=True, check=True
+            )
+            print(result.stdout)
+        except Exception as e:
+            print("Error while installing Playwright browsers:", e)
+            print("Please run: python -m playwright install chromium")
+            sys.exit(1)
+
+ensure_playwright_browsers()
+
+
 import os
 from pprint import pprint
 from typing import Literal
