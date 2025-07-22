@@ -1,0 +1,565 @@
+[2025-07-22 08:47:31,932] INFO - Total batches: 34 | Max workers: 4
+[2025-07-22 08:47:31,932] INFO - Submitting batch 1 for execution
+[2025-07-22 08:47:31,933] INFO - 🚀 Starting Batch #1 with 4 items
+[2025-07-22 08:47:33,938] INFO - Submitting batch 2 for execution
+[2025-07-22 08:47:33,939] INFO - 🚀 Starting Batch #2 with 4 items
+[2025-07-22 08:47:35,944] INFO - Submitting batch 3 for execution
+[2025-07-22 08:47:35,945] INFO - 🚀 Starting Batch #3 with 4 items
+[2025-07-22 08:47:36,026] INFO - [Batch 1] TN2242512AG04743 - Invoices Found: ['TN2242512AG04743']
+[2025-07-22 08:47:37,492] INFO - [Batch 2] KA2242512AG69760 - Invoices Found: ['KA2242512AG69760']
+[2025-07-22 08:47:37,950] INFO - Submitting batch 4 for execution
+[2025-07-22 08:47:37,951] INFO - 🚀 Starting Batch #4 with 4 items
+[2025-07-22 08:47:39,406] INFO - [Batch 1] Processed invoice: TN2242512AG04743
+[2025-07-22 08:47:39,920] INFO - [Batch 3] MH2242512AL67032 - Invoices Found: ['MH2242512AL67032']
+[2025-07-22 08:47:39,956] INFO - Submitting batch 5 for execution
+[2025-07-22 08:47:40,997] INFO - [Batch 2] Processed invoice: KA2242512AG69760
+[2025-07-22 08:47:41,903] INFO - [Batch 4] GJ2242512AD19147 - Invoices Found: ['GJ2242512AD19147']
+[2025-07-22 08:47:41,961] INFO - Submitting batch 6 for execution
+[2025-07-22 08:47:42,982] INFO - [Batch 1] TN2242512AG02026 - Invoices Found: ['TN2242512AG02026']
+[2025-07-22 08:47:43,119] INFO - [Batch 3] Processed invoice: MH2242512AL67032
+[2025-07-22 08:47:43,967] INFO - Submitting batch 7 for execution
+[2025-07-22 08:47:44,630] INFO - [Batch 2] KA2242512AG53116 - Invoices Found: ['KA2242512AG53116']
+[2025-07-22 08:47:45,451] INFO - [Batch 4] Processed invoice: GJ2242512AD19147
+[2025-07-22 08:47:45,968] INFO - Submitting batch 8 for execution
+[2025-07-22 08:47:46,323] INFO - [Batch 1] Processed invoice: TN2242512AG02026
+[2025-07-22 08:47:47,156] INFO - [Batch 3] MH2242512AL56777 - Invoices Found: ['MH2242512AL56777']
+[2025-07-22 08:47:47,970] INFO - Submitting batch 9 for execution
+[2025-07-22 08:47:48,072] INFO - [Batch 2] Processed invoice: KA2242512AG53116
+[2025-07-22 08:47:49,192] INFO - [Batch 4] GJ2242512AD13729 - Invoices Found: ['GJ2242512AD13729']
+[2025-07-22 08:47:49,971] INFO - Submitting batch 10 for execution
+[2025-07-22 08:47:50,266] INFO - [Batch 1] KA2242512AG82037 - Invoices Found: ['KA2242512AG82037']
+[2025-07-22 08:47:50,879] INFO - [Batch 3] Processed invoice: MH2242512AL56777
+[2025-07-22 08:47:51,682] INFO - [Batch 2] KA2242512AG36547 - Invoices Found: ['KA2242512AG36547']
+[2025-07-22 08:47:51,976] INFO - Submitting batch 11 for execution
+[2025-07-22 08:47:52,457] INFO - [Batch 4] Processed invoice: GJ2242512AD13729
+[2025-07-22 08:47:53,980] INFO - Submitting batch 12 for execution
+[2025-07-22 08:47:54,022] INFO - [Batch 1] Processed invoice: KA2242512AG82037
+[2025-07-22 08:47:54,571] INFO - [Batch 3] MH2242512AL44069 - Invoices Found: ['MH2242512AL44069']
+[2025-07-22 08:47:54,931] INFO - [Batch 2] Processed invoice: KA2242512AG36547
+[2025-07-22 08:47:55,947] INFO - [Batch 4] CG2242512AA91348 - Invoices Found: ['CG2242512AA91348']
+[2025-07-22 08:47:55,985] INFO - Submitting batch 13 for execution
+[2025-07-22 08:47:57,705] INFO - [Batch 1] KA2242512AG79255 - Invoices Found: ['KA2242512AG79255']
+[2025-07-22 08:47:57,758] ERROR - [Batch 3] ❌ Error processing invoice MH2242512AL44069: Page.goto: Connection closed while reading from the driver
+Traceback (most recent call last):
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main.py", line 103, in process_batch
+    self.make_data_fetch_request(email, invoice, page)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main.py", line 213, in make_data_fetch_request
+    page.goto(file_url(os.path.join("temp", f'{invoice_number}.html')))
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/playwright/sync_api/_generated.py", line 9002, in goto
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.goto(
+        ^^^^^^^^^^^^^^^^^^^^
+            url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        )
+        ^
+    )
+    ^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/playwright/_impl/_page.py", line 556, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/playwright/_impl/_frame.py", line 146, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/playwright/_impl/_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/playwright/_impl/_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+Exception: Page.goto: Connection closed while reading from the driver
+[2025-07-22 08:47:58,719] ERROR - [Batch 4] ❌ Error processing invoice CG2242512AA91348: Page.goto: Connection closed while reading from the driver
+Traceback (most recent call last):
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main.py", line 103, in process_batch
+    self.make_data_fetch_request(email, invoice, page)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main.py", line 213, in make_data_fetch_request
+    page.goto(file_url(os.path.join("temp", f'{invoice_number}.html')))
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/playwright/sync_api/_generated.py", line 9002, in goto
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.goto(
+        ^^^^^^^^^^^^^^^^^^^^
+            url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        )
+        ^
+    )
+    ^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/playwright/_impl/_page.py", line 556, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/playwright/_impl/_frame.py", line 146, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/playwright/_impl/_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/playwright/_impl/_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+Exception: Page.goto: Connection closed while reading from the driver
+[2025-07-22 08:47:58,772] INFO - [Batch 2] MH2242512AL70601 - Invoices Found: ['MH2242512AL70601']
+[2025-07-22 09:20:30,480] INFO - Total batches: 134 | Max workers: 1
+[2025-07-22 09:20:30,480] INFO - Submitting batch 1 for execution
+[2025-07-22 09:20:30,481] INFO - 🚀 Starting Batch #1 with 1 items
+[2025-07-22 09:20:32,486] INFO - Submitting batch 2 for execution
+[2025-07-22 09:20:34,751] INFO - [Batch 1] TN2242512AG04743 - Invoices Found: ['TN2242512AG04743']
+[2025-07-22 09:20:37,678] ERROR - [Batch 1] ❌ Error processing invoice TN2242512AG04743: Page.goto: Connection closed while reading from the driver
+Traceback (most recent call last):
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main.py", line 103, in process_batch
+    self.make_data_fetch_request(email, invoice, page)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main.py", line 213, in make_data_fetch_request
+    page.goto(file_url(os.path.join("temp", f'{invoice_number}.html')))
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/playwright/sync_api/_generated.py", line 9002, in goto
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.goto(
+        ^^^^^^^^^^^^^^^^^^^^
+            url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        )
+        ^
+    )
+    ^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/playwright/_impl/_page.py", line 556, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/playwright/_impl/_frame.py", line 146, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/playwright/_impl/_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/playwright/_impl/_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+Exception: Page.goto: Connection closed while reading from the driver
+[2025-07-22 09:22:09,107] INFO - Total batches: 45 | Max workers: 3
+[2025-07-22 09:22:09,107] INFO - Submitting batch 1 for execution
+[2025-07-22 09:22:09,107] INFO - 🚀 Starting Batch #1 with 3 items
+[2025-07-22 09:22:12,108] INFO - Submitting batch 2 for execution
+[2025-07-22 09:22:12,109] INFO - 🚀 Starting Batch #2 with 3 items
+[2025-07-22 09:22:12,919] INFO - [Batch 1] TN2242512AG04743 - Invoices Found: ['TN2242512AG04743']
+[2025-07-22 09:22:15,112] INFO - Submitting batch 3 for execution
+[2025-07-22 09:22:15,112] INFO - 🚀 Starting Batch #3 with 3 items
+[2025-07-22 09:22:15,756] INFO - [Batch 2] KA2242512AG79255 - Invoices Found: ['KA2242512AG79255']
+[2025-07-22 09:22:16,671] INFO - [Batch 1] Processed invoice: TN2242512AG04743
+[2025-07-22 09:22:18,117] INFO - Submitting batch 4 for execution
+[2025-07-22 09:22:19,237] INFO - [Batch 3] KA2242512AG36547 - Invoices Found: ['KA2242512AG36547']
+[2025-07-22 09:22:19,285] INFO - [Batch 2] Processed invoice: KA2242512AG79255
+[2025-07-22 09:22:20,162] INFO - [Batch 1] TN2242512AG02026 - Invoices Found: ['TN2242512AG02026']
+[2025-07-22 09:22:21,123] INFO - Submitting batch 5 for execution
+[2025-07-22 09:22:22,852] INFO - [Batch 3] Processed invoice: KA2242512AG36547
+[2025-07-22 09:22:22,977] INFO - [Batch 2] KA2242512AG69760 - Invoices Found: ['KA2242512AG69760']
+[2025-07-22 09:22:23,511] INFO - [Batch 1] Processed invoice: TN2242512AG02026
+[2025-07-22 09:22:24,123] INFO - Submitting batch 6 for execution
+[2025-07-22 09:22:27,129] INFO - Submitting batch 7 for execution
+[2025-07-22 09:22:27,293] INFO - [Batch 3] MH2242512AL70601 - Invoices Found: ['MH2242512AL70601']
+[2025-07-22 09:22:27,530] INFO - [Batch 2] Processed invoice: KA2242512AG69760
+[2025-07-22 09:22:27,598] INFO - [Batch 1] KA2242512AG82037 - Invoices Found: ['KA2242512AG82037']
+[2025-07-22 09:22:30,134] INFO - Submitting batch 8 for execution
+[2025-07-22 09:22:31,228] INFO - [Batch 3] Processed invoice: MH2242512AL70601
+[2025-07-22 09:22:31,652] INFO - [Batch 1] Processed invoice: KA2242512AG82037
+[2025-07-22 09:22:31,680] INFO - ✅ Completed Batch #1 in 22.57 seconds
+[2025-07-22 09:22:31,680] INFO - 🚀 Starting Batch #4 with 3 items
+[2025-07-22 09:22:31,737] INFO - [Batch 2] KA2242512AG53116 - Invoices Found: ['KA2242512AG53116']
+[2025-07-22 09:22:33,139] INFO - Submitting batch 9 for execution
+[2025-07-22 09:22:34,657] INFO - [Batch 3] MH2242512AL67032 - Invoices Found: ['MH2242512AL67032']
+[2025-07-22 09:22:35,206] INFO - [Batch 2] Processed invoice: KA2242512AG53116
+[2025-07-22 09:22:35,229] INFO - ✅ Completed Batch #2 in 23.12 seconds
+[2025-07-22 09:22:35,229] INFO - 🚀 Starting Batch #5 with 3 items
+[2025-07-22 09:22:35,767] INFO - [Batch 4] MH2242512AL56777 - Invoices Found: ['MH2242512AL56777']
+[2025-07-22 09:22:36,145] INFO - Submitting batch 10 for execution
+[2025-07-22 09:22:38,610] INFO - [Batch 3] Processed invoice: MH2242512AL67032
+[2025-07-22 09:22:38,631] INFO - ✅ Completed Batch #3 in 23.52 seconds
+[2025-07-22 09:22:38,631] INFO - 🚀 Starting Batch #6 with 3 items
+[2025-07-22 09:22:39,093] INFO - [Batch 5] GJ2242512AD19147 - Invoices Found: ['GJ2242512AD19147']
+[2025-07-22 09:22:39,148] INFO - Submitting batch 11 for execution
+[2025-07-22 09:22:39,805] INFO - [Batch 4] Processed invoice: MH2242512AL56777
+[2025-07-22 09:22:42,153] INFO - Submitting batch 12 for execution
+[2025-07-22 09:22:43,335] INFO - [Batch 4] MH2242512AL44069 - Invoices Found: ['MH2242512AL44069']
+[2025-07-22 09:22:43,624] INFO - [Batch 6] JS2242512AA73375 - Invoices Found: ['JS2242512AA73375']
+[2025-07-22 09:22:44,090] INFO - [Batch 5] Processed invoice: GJ2242512AD19147
+[2025-07-22 09:22:45,158] INFO - Submitting batch 13 for execution
+[2025-07-22 09:22:47,803] INFO - [Batch 5] GJ2242512AD13729 - Invoices Found: ['GJ2242512AD13729']
+[2025-07-22 09:22:48,162] INFO - Submitting batch 14 for execution
+[2025-07-22 09:22:48,252] INFO - [Batch 4] Processed invoice: MH2242512AL44069
+[2025-07-22 09:22:48,359] INFO - [Batch 6] Processed invoice: JS2242512AA73375
+[2025-07-22 09:22:51,167] INFO - Submitting batch 15 for execution
+[2025-07-22 09:22:51,798] INFO - [Batch 6] JS2242512AA72402 - Invoices Found: ['JS2242512AA72402']
+[2025-07-22 09:22:52,449] INFO - [Batch 5] Processed invoice: GJ2242512AD13729
+[2025-07-22 09:22:53,056] INFO - [Batch 4] MH2242512AL20442 - Invoices Found: ['MH2242512AL20442']
+[2025-07-22 09:22:54,168] INFO - Submitting batch 16 for execution
+[2025-07-22 09:22:56,154] INFO - [Batch 5] CG2242512AA91348 - Invoices Found: ['CG2242512AA91348']
+[2025-07-22 09:22:56,188] INFO - [Batch 6] Processed invoice: JS2242512AA72402
+[2025-07-22 09:22:57,171] INFO - Submitting batch 17 for execution
+[2025-07-22 09:22:57,942] INFO - [Batch 4] Processed invoice: MH2242512AL20442
+[2025-07-22 09:22:57,967] INFO - ✅ Completed Batch #4 in 26.29 seconds
+[2025-07-22 09:22:57,967] INFO - 🚀 Starting Batch #7 with 3 items
+[2025-07-22 09:22:59,628] INFO - [Batch 5] Processed invoice: CG2242512AA91348
+[2025-07-22 09:22:59,655] INFO - ✅ Completed Batch #5 in 24.43 seconds
+[2025-07-22 09:22:59,655] INFO - 🚀 Starting Batch #8 with 3 items
+[2025-07-22 09:23:00,176] INFO - Submitting batch 18 for execution
+[2025-07-22 09:23:00,445] INFO - [Batch 6] WB2242512AF06856 - Invoices Found: ['WB2242512AF06856']
+[2025-07-22 09:23:01,739] INFO - [Batch 7] WB2242512AE92192 - Invoices Found: ['WB2242512AE92192']
+[2025-07-22 09:23:03,181] INFO - Submitting batch 19 for execution
+[2025-07-22 09:23:03,864] INFO - [Batch 8] WB2242501AF92989 - Invoices Found: ['WB2242501AF92989']
+[2025-07-22 09:23:04,297] INFO - [Batch 6] Processed invoice: WB2242512AF06856
+[2025-07-22 09:23:04,321] INFO - ✅ Completed Batch #6 in 25.69 seconds
+[2025-07-22 09:23:04,322] INFO - 🚀 Starting Batch #9 with 3 items
+[2025-07-22 09:23:05,158] INFO - [Batch 7] Processed invoice: WB2242512AE92192
+[2025-07-22 09:23:06,182] INFO - Submitting batch 20 for execution
+[2025-07-22 09:23:07,687] INFO - [Batch 8] Processed invoice: WB2242501AF92989
+[2025-07-22 09:23:08,765] INFO - [Batch 9] GJ2242503AE77718 - Invoices Found: ['GJ2242503AE77718']
+[2025-07-22 09:23:08,835] INFO - [Batch 7] WB2242512AE77731 - Invoices Found: ['WB2242512AE77731']
+[2025-07-22 09:23:09,186] INFO - Submitting batch 21 for execution
+[2025-07-22 09:23:11,473] INFO - [Batch 8] KA2242503AK15006 - Invoices Found: ['KA2242503AK15006']
+[2025-07-22 09:23:12,192] INFO - Submitting batch 22 for execution
+[2025-07-22 09:23:12,287] INFO - [Batch 9] Processed invoice: GJ2242503AE77718
+[2025-07-22 09:23:12,470] INFO - [Batch 7] Processed invoice: WB2242512AE77731
+[2025-07-22 09:23:14,704] INFO - [Batch 8] Processed invoice: KA2242503AK15006
+[2025-07-22 09:23:15,197] INFO - Submitting batch 23 for execution
+[2025-07-22 09:23:15,704] INFO - [Batch 9] MH2252604AA49791 - Invoices Found: ['MH2252604AA49791']
+[2025-07-22 09:23:16,122] INFO - [Batch 7] DL2242512AL30143 - Invoices Found: ['DL2242512AL30143']
+[2025-07-22 09:23:18,208] INFO - Submitting batch 24 for execution
+[2025-07-22 09:23:18,252] INFO - [Batch 8] MH2242503AQ72802 - Invoices Found: ['MH2242503AQ72802']
+[2025-07-22 09:23:18,925] INFO - [Batch 9] Processed invoice: MH2252604AA49791
+[2025-07-22 09:23:19,574] INFO - [Batch 7] Processed invoice: DL2242512AL30143
+[2025-07-22 09:23:19,599] INFO - ✅ Completed Batch #7 in 21.63 seconds
+[2025-07-22 09:23:19,599] INFO - 🚀 Starting Batch #10 with 3 items
+[2025-07-22 09:23:21,219] INFO - Submitting batch 25 for execution
+[2025-07-22 09:23:21,505] INFO - [Batch 8] Processed invoice: MH2242503AQ72802
+[2025-07-22 09:23:21,529] INFO - ✅ Completed Batch #8 in 21.87 seconds
+[2025-07-22 09:23:21,529] INFO - 🚀 Starting Batch #11 with 3 items
+[2025-07-22 09:23:22,849] INFO - [Batch 9] RJ2252604AA05454 - Invoices Found: ['RJ2252604AA05454']
+[2025-07-22 09:23:23,336] INFO - [Batch 10] DL2252604AA40255 - Invoices Found: ['DL2252604AA40255']
+[2025-07-22 09:23:24,225] INFO - Submitting batch 26 for execution
+[2025-07-22 09:23:25,152] INFO - [Batch 11] MH1252604AB95923 - Invoices Found: ['MH1252604AB95923']
+[2025-07-22 09:23:26,134] INFO - [Batch 9] Processed invoice: RJ2252604AA05454
+[2025-07-22 09:23:26,157] INFO - ✅ Completed Batch #9 in 21.84 seconds
+[2025-07-22 09:23:26,158] INFO - 🚀 Starting Batch #12 with 3 items
+[2025-07-22 09:23:26,590] INFO - [Batch 10] Processed invoice: DL2252604AA40255
+[2025-07-22 09:23:27,227] INFO - Submitting batch 27 for execution
+[2025-07-22 09:23:28,255] INFO - [Batch 11] Processed invoice: MH1252604AB95923
+[2025-07-22 09:23:29,892] INFO - [Batch 12] MH1252604AA62623 - Invoices Found: ['MH1252604AA62623']
+[2025-07-22 09:23:30,230] INFO - Submitting batch 28 for execution
+[2025-07-22 09:23:30,415] INFO - [Batch 10] GA1252604AA03435 - Invoices Found: ['GA1252604AA03435']
+[2025-07-22 09:23:31,576] INFO - [Batch 11] MH1252604AA78329 - Invoices Found: ['MH1252604AA78329']
+[2025-07-22 09:23:33,185] INFO - [Batch 12] Processed invoice: MH1252604AA62623
+[2025-07-22 09:23:33,235] INFO - Submitting batch 29 for execution
+[2025-07-22 09:23:33,918] INFO - [Batch 10] Processed invoice: GA1252604AA03435
+[2025-07-22 09:23:35,161] INFO - [Batch 11] Processed invoice: MH1252604AA78329
+[2025-07-22 09:23:36,241] INFO - Submitting batch 30 for execution
+[2025-07-22 09:23:36,241] INFO - [Batch 10] MH1252604AE15716 - Invoices Found: ['MH1252604AE15716']
+[2025-07-22 09:23:36,891] INFO - [Batch 12] MH1252604AA22509 - Invoices Found: ['MH1252604AA22509']
+[2025-07-22 09:23:38,510] INFO - [Batch 10] Processed invoice: MH1252604AE15716
+[2025-07-22 09:23:38,531] INFO - ✅ Completed Batch #10 in 18.93 seconds
+[2025-07-22 09:23:38,531] INFO - 🚀 Starting Batch #13 with 3 items
+[2025-07-22 09:23:38,617] INFO - [Batch 11] MH1252604AA77602 - Invoices Found: ['MH1252604AA77602']
+[2025-07-22 09:23:39,245] INFO - Submitting batch 31 for execution
+[2025-07-22 09:23:40,656] INFO - [Batch 12] Processed invoice: MH1252604AA22509
+[2025-07-22 09:23:41,838] INFO - [Batch 11] Processed invoice: MH1252604AA77602
+[2025-07-22 09:23:41,859] INFO - ✅ Completed Batch #11 in 20.33 seconds
+[2025-07-22 09:23:41,859] INFO - 🚀 Starting Batch #14 with 3 items
+[2025-07-22 09:23:42,250] INFO - Submitting batch 32 for execution
+[2025-07-22 09:23:43,380] INFO - [Batch 13] GJ1252604AA21384 - Invoices Found: ['GJ1252604AA21384']
+[2025-07-22 09:23:44,884] INFO - [Batch 12] GJ1252604AD35652 - Invoices Found: ['GJ1252604AD35652']
+[2025-07-22 09:23:45,255] INFO - Submitting batch 33 for execution
+[2025-07-22 09:23:45,728] INFO - [Batch 14] RJ1252604AA18868 - Invoices Found: ['RJ1252604AA18868']
+[2025-07-22 09:23:46,796] INFO - [Batch 13] Processed invoice: GJ1252604AA21384
+[2025-07-22 09:23:48,027] INFO - [Batch 12] Processed invoice: GJ1252604AD35652
+[2025-07-22 09:23:48,054] INFO - ✅ Completed Batch #12 in 21.9 seconds
+[2025-07-22 09:23:48,054] INFO - 🚀 Starting Batch #15 with 3 items
+[2025-07-22 09:23:48,261] INFO - Submitting batch 34 for execution
+[2025-07-22 09:23:48,973] INFO - [Batch 14] Processed invoice: RJ1252604AA18868
+[2025-07-22 09:23:50,443] INFO - [Batch 13] RJ1252604AA44743 - Invoices Found: ['RJ1252604AA44743']
+[2025-07-22 09:23:51,266] INFO - Submitting batch 35 for execution
+[2025-07-22 09:23:51,752] INFO - [Batch 14] DL1252604AC83131 - Invoices Found: ['DL1252604AC83131']
+[2025-07-22 09:23:52,271] INFO - [Batch 15] TN1242512BV96085 - Invoices Found: ['TN1242512BV96085']
+[2025-07-22 09:23:54,163] INFO - [Batch 14] Processed invoice: DL1252604AC83131
+[2025-07-22 09:23:54,270] INFO - Submitting batch 36 for execution
+[2025-07-22 09:23:55,767] INFO - [Batch 13] Processed invoice: RJ1252604AA44743
+[2025-07-22 09:23:55,789] INFO - [Batch 15] Processed invoice: TN1242512BV96085
+[2025-07-22 09:23:57,276] INFO - Submitting batch 37 for execution
+[2025-07-22 09:23:57,596] INFO - [Batch 14] DL1252604AA54475 - Invoices Found: ['DL1252604AA54475']
+[2025-07-22 09:23:59,133] INFO - [Batch 13] RJ1252604AA43965 - Invoices Found: ['RJ1252604AA43965']
+[2025-07-22 09:24:00,147] INFO - [Batch 15] TN1242502CG02831 - Invoices Found: ['TN1242502CG02831']
+[2025-07-22 09:24:00,281] INFO - Submitting batch 38 for execution
+[2025-07-22 09:24:01,517] INFO - [Batch 14] Processed invoice: DL1252604AA54475
+[2025-07-22 09:24:01,549] INFO - ✅ Completed Batch #14 in 19.69 seconds
+[2025-07-22 09:24:01,549] INFO - 🚀 Starting Batch #16 with 3 items
+[2025-07-22 09:24:01,967] INFO - [Batch 13] Processed invoice: RJ1252604AA43965
+[2025-07-22 09:24:01,988] INFO - ✅ Completed Batch #13 in 23.46 seconds
+[2025-07-22 09:24:01,988] INFO - 🚀 Starting Batch #17 with 3 items
+[2025-07-22 09:24:03,283] INFO - Submitting batch 39 for execution
+[2025-07-22 09:24:03,362] INFO - [Batch 15] Processed invoice: TN1242502CG02831
+[2025-07-22 09:24:05,711] INFO - [Batch 16] TN1242501CA08724 - Invoices Found: ['TN1242501CA08724']
+[2025-07-22 09:24:05,783] INFO - [Batch 17] KA1242511CF18985 - Invoices Found: ['KA1242511CF18985']
+[2025-07-22 09:24:06,284] INFO - Submitting batch 40 for execution
+[2025-07-22 09:24:06,874] INFO - [Batch 15] TN1242501CA18371 - Invoices Found: ['TN1242501CA18371']
+[2025-07-22 09:24:09,288] INFO - Submitting batch 41 for execution
+[2025-07-22 09:24:10,440] INFO - [Batch 17] Processed invoice: KA1242511CF18985
+[2025-07-22 09:24:10,446] INFO - [Batch 16] Processed invoice: TN1242501CA08724
+[2025-07-22 09:24:10,567] INFO - [Batch 15] Processed invoice: TN1242501CA18371
+[2025-07-22 09:24:10,592] INFO - ✅ Completed Batch #15 in 22.54 seconds
+[2025-07-22 09:24:10,592] INFO - 🚀 Starting Batch #18 with 3 items
+[2025-07-22 09:24:12,289] INFO - Submitting batch 42 for execution
+[2025-07-22 09:24:13,111] INFO - [Batch 17] KA1242503DK91953 - Invoices Found: ['KA1242503DK91953']
+[2025-07-22 09:24:14,221] INFO - [Batch 16] KA1242512CK92716 - Invoices Found: ['KA1242512CK92716']
+[2025-07-22 09:24:14,447] INFO - [Batch 18] KA1242502DF13427 - Invoices Found: ['KA1242502DF13427']
+[2025-07-22 09:24:14,942] INFO - [Batch 17] Processed invoice: KA1242503DK91953
+[2025-07-22 09:24:15,293] INFO - Submitting batch 43 for execution
+[2025-07-22 09:24:17,571] INFO - [Batch 16] Processed invoice: KA1242512CK92716
+[2025-07-22 09:24:17,633] INFO - [Batch 18] Processed invoice: KA1242502DF13427
+[2025-07-22 09:24:18,299] INFO - Submitting batch 44 for execution
+[2025-07-22 09:24:18,946] INFO - [Batch 17] KA1242503DJ50378 - Invoices Found: ['KA1242503DJ50378']
+[2025-07-22 09:24:19,994] INFO - [Batch 16] KA1242511CH36803 - Invoices Found: ['KA1242511CH36803']
+[2025-07-22 09:24:21,135] INFO - [Batch 18] KA1242502DF10525 - Invoices Found: ['KA1242502DF10525']
+[2025-07-22 09:24:21,304] INFO - Submitting batch 45 for execution
+[2025-07-22 09:24:22,139] INFO - [Batch 17] Processed invoice: KA1242503DJ50378
+[2025-07-22 09:24:22,164] INFO - ✅ Completed Batch #17 in 20.18 seconds
+[2025-07-22 09:24:22,164] INFO - 🚀 Starting Batch #19 with 3 items
+[2025-07-22 09:24:22,230] INFO - [Batch 16] Processed invoice: KA1242511CH36803
+[2025-07-22 09:24:22,249] INFO - ✅ Completed Batch #16 in 20.7 seconds
+[2025-07-22 09:24:22,249] INFO - 🚀 Starting Batch #20 with 3 items
+[2025-07-22 09:24:24,084] INFO - [Batch 18] Processed invoice: KA1242502DF10525
+[2025-07-22 09:24:26,740] INFO - [Batch 20] MH1242512DP57587 - Invoices Found: ['MH1242512DP57587']
+[2025-07-22 09:24:26,807] INFO - [Batch 19] MH1242512DS53512 - Invoices Found: ['MH1242512DS53512']
+[2025-07-22 09:24:27,353] INFO - [Batch 18] MH1242512DS85275 - Invoices Found: ['MH1242512DS85275']
+[2025-07-22 09:24:30,481] INFO - [Batch 20] Processed invoice: MH1242512DP57587
+[2025-07-22 09:24:30,687] INFO - [Batch 18] Processed invoice: MH1242512DS85275
+[2025-07-22 09:24:30,712] INFO - ✅ Completed Batch #18 in 20.12 seconds
+[2025-07-22 09:24:30,712] INFO - 🚀 Starting Batch #21 with 3 items
+[2025-07-22 09:24:31,255] INFO - [Batch 19] Processed invoice: MH1242512DS53512
+[2025-07-22 09:24:33,432] INFO - [Batch 21] MH1242511DI03888 - Invoices Found: ['MH1242511DI03888']
+[2025-07-22 09:24:33,968] INFO - [Batch 19] MH1242512DQ62904 - Invoices Found: ['MH1242512DQ62904']
+[2025-07-22 09:24:35,010] INFO - [Batch 20] MH1242512DP28100 - Invoices Found: ['MH1242512DP28100']
+[2025-07-22 09:24:35,961] INFO - [Batch 21] Processed invoice: MH1242511DI03888
+[2025-07-22 09:24:37,168] INFO - [Batch 19] Processed invoice: MH1242512DQ62904
+[2025-07-22 09:24:42,375] INFO - [Batch 19] MH1242512DQ38463 - Invoices Found: ['MH1242512DQ38463']
+[2025-07-22 09:24:42,433] INFO - [Batch 21] MH1242511DH52735 - Invoices Found: ['MH1242511DH52735']
+[2025-07-22 09:24:45,500] INFO - [Batch 19] Processed invoice: MH1242512DQ38463
+[2025-07-22 09:24:45,523] INFO - ✅ Completed Batch #19 in 23.36 seconds
+[2025-07-22 09:24:45,523] INFO - 🚀 Starting Batch #22 with 3 items
+[2025-07-22 09:24:46,505] INFO - [Batch 21] Processed invoice: MH1242511DH52735
+[2025-07-22 09:24:48,191] INFO - [Batch 20] Processed invoice: MH1242512DP28100
+[2025-07-22 09:24:49,221] INFO - [Batch 22] MH1242503FB73730 - Invoices Found: ['MH1242503FB73730']
+[2025-07-22 09:24:49,697] INFO - [Batch 21] MH1242511DE78838 - Invoices Found: ['MH1242511DE78838']
+[2025-07-22 09:24:52,159] INFO - [Batch 20] MH1242512DL03919 - Invoices Found: ['MH1242512DL03919']
+[2025-07-22 09:24:52,825] INFO - [Batch 22] Processed invoice: MH1242503FB73730
+[2025-07-22 09:24:53,098] INFO - [Batch 21] Processed invoice: MH1242511DE78838
+[2025-07-22 09:24:53,122] INFO - ✅ Completed Batch #21 in 22.41 seconds
+[2025-07-22 09:24:53,122] INFO - 🚀 Starting Batch #23 with 3 items
+[2025-07-22 09:24:55,277] INFO - [Batch 22] MH1242503EZ50766 - Invoices Found: ['MH1242503EZ50766']
+[2025-07-22 09:24:56,406] INFO - [Batch 20] Processed invoice: MH1242512DL03919
+[2025-07-22 09:24:56,432] INFO - ✅ Completed Batch #20 in 34.18 seconds
+[2025-07-22 09:24:56,432] INFO - 🚀 Starting Batch #24 with 3 items
+[2025-07-22 09:24:58,338] INFO - [Batch 22] Processed invoice: MH1242503EZ50766
+[2025-07-22 09:24:58,429] INFO - [Batch 23] MH1242503EV34038 - Invoices Found: ['MH1242503EV34038']
+[2025-07-22 09:24:59,929] INFO - [Batch 24] MH1242501EE06283 - Invoices Found: ['MH1242501EE06283']
+[2025-07-22 09:25:03,119] INFO - [Batch 24] Processed invoice: MH1242501EE06283
+[2025-07-22 09:25:03,542] INFO - [Batch 23] Processed invoice: MH1242503EV34038
+[2025-07-22 09:25:03,760] INFO - [Batch 22] MH1242503EX49411 - Invoices Found: ['MH1242503EX49411']
+[2025-07-22 09:25:07,274] INFO - [Batch 23] MH1242502ER11121 - Invoices Found: ['MH1242502ER11121']
+[2025-07-22 09:25:08,282] INFO - [Batch 24] MH1242501EC79258 - Invoices Found: ['MH1242501EC79258']
+[2025-07-22 09:25:08,491] INFO - [Batch 22] Processed invoice: MH1242503EX49411
+[2025-07-22 09:25:08,512] INFO - ✅ Completed Batch #22 in 22.99 seconds
+[2025-07-22 09:25:08,512] INFO - 🚀 Starting Batch #25 with 3 items
+[2025-07-22 09:25:11,323] INFO - [Batch 23] Processed invoice: MH1242502ER11121
+[2025-07-22 09:25:11,560] INFO - [Batch 24] Processed invoice: MH1242501EC79258
+[2025-07-22 09:25:12,375] INFO - [Batch 25] GJ1242512BC95310 - Invoices Found: ['GJ1242512BC95310']
+[2025-07-22 09:25:14,180] INFO - [Batch 23] MH1242502EH27240 - Invoices Found: ['MH1242502EH27240']
+[2025-07-22 09:25:14,849] INFO - [Batch 24] MH1242501EC59396 - Invoices Found: ['MH1242501EC59396']
+[2025-07-22 09:25:15,247] INFO - [Batch 25] Processed invoice: GJ1242512BC95310
+[2025-07-22 09:25:15,958] INFO - [Batch 23] Processed invoice: MH1242502EH27240
+[2025-07-22 09:25:15,980] INFO - ✅ Completed Batch #23 in 22.86 seconds
+[2025-07-22 09:25:15,980] INFO - 🚀 Starting Batch #26 with 3 items
+[2025-07-22 09:25:17,904] INFO - [Batch 24] Processed invoice: MH1242501EC59396
+[2025-07-22 09:25:17,928] INFO - ✅ Completed Batch #24 in 21.5 seconds
+[2025-07-22 09:25:17,928] INFO - 🚀 Starting Batch #27 with 3 items
+[2025-07-22 09:25:18,559] INFO - [Batch 26] GJ1242512BC02274 - Invoices Found: ['GJ1242512BC02274']
+[2025-07-22 09:25:19,655] INFO - [Batch 25] GJ1242512BC88171 - Invoices Found: ['GJ1242512BC88171']
+[2025-07-22 09:25:20,518] INFO - [Batch 26] Processed invoice: GJ1242512BC02274
+[2025-07-22 09:25:21,520] INFO - [Batch 27] GJ1242512BB62648 - Invoices Found: ['GJ1242512BB62648']
+[2025-07-22 09:25:22,892] INFO - [Batch 25] Processed invoice: GJ1242512BC88171
+[2025-07-22 09:25:25,162] INFO - [Batch 25] GJ1242512BC06829 - Invoices Found: ['GJ1242512BC06829']
+[2025-07-22 09:25:25,196] INFO - [Batch 26] GJ1242512BB72716 - Invoices Found: ['GJ1242512BB72716']
+[2025-07-22 09:25:25,804] INFO - [Batch 27] Processed invoice: GJ1242512BB62648
+[2025-07-22 09:25:27,294] INFO - [Batch 25] Processed invoice: GJ1242512BC06829
+[2025-07-22 09:25:27,318] INFO - ✅ Completed Batch #25 in 18.81 seconds
+[2025-07-22 09:25:27,318] INFO - 🚀 Starting Batch #28 with 3 items
+[2025-07-22 09:25:28,428] INFO - [Batch 26] Processed invoice: GJ1242512BB72716
+[2025-07-22 09:25:29,714] INFO - [Batch 27] GJ1242512BA29029 - Invoices Found: ['GJ1242512BA29029']
+[2025-07-22 09:25:30,771] INFO - [Batch 28] GJ1242511AZ35702 - Invoices Found: ['GJ1242511AZ35702']
+[2025-07-22 09:25:31,810] INFO - [Batch 26] GJ1242512BB67353 - Invoices Found: ['GJ1242512BB67353']
+[2025-07-22 09:25:33,161] INFO - [Batch 27] Processed invoice: GJ1242512BA29029
+[2025-07-22 09:25:34,815] INFO - [Batch 28] Processed invoice: GJ1242511AZ35702
+[2025-07-22 09:25:36,747] INFO - [Batch 27] GJ1242511AZ41076 - Invoices Found: ['GJ1242511AZ41076']
+[2025-07-22 09:25:36,807] INFO - [Batch 26] Processed invoice: GJ1242512BB67353
+[2025-07-22 09:25:36,829] INFO - ✅ Completed Batch #26 in 20.85 seconds
+[2025-07-22 09:25:36,829] INFO - 🚀 Starting Batch #29 with 3 items
+[2025-07-22 09:25:38,457] INFO - [Batch 28] GJ1242511AY41468 - Invoices Found: ['GJ1242511AY41468']
+[2025-07-22 09:25:39,528] INFO - [Batch 29] GJ1242503BM67057 - Invoices Found: ['GJ1242503BM67057']
+[2025-07-22 09:25:40,284] INFO - [Batch 27] Processed invoice: GJ1242511AZ41076
+[2025-07-22 09:25:40,307] INFO - ✅ Completed Batch #27 in 22.38 seconds
+[2025-07-22 09:25:40,308] INFO - 🚀 Starting Batch #30 with 3 items
+[2025-07-22 09:25:41,596] INFO - [Batch 28] Processed invoice: GJ1242511AY41468
+[2025-07-22 09:25:43,368] INFO - [Batch 29] Processed invoice: GJ1242503BM67057
+[2025-07-22 09:25:44,226] INFO - [Batch 30] GJ1242503BK75025 - Invoices Found: ['GJ1242503BK75025']
+[2025-07-22 09:25:45,205] INFO - [Batch 28] GJ1242511AX43645 - Invoices Found: ['GJ1242511AX43645']
+[2025-07-22 09:25:48,297] INFO - [Batch 29] GJ1242503BL95794 - Invoices Found: ['GJ1242503BL95794']
+[2025-07-22 09:25:48,544] INFO - [Batch 30] Processed invoice: GJ1242503BK75025
+[2025-07-22 09:25:48,574] INFO - [Batch 28] Processed invoice: GJ1242511AX43645
+[2025-07-22 09:25:48,593] INFO - ✅ Completed Batch #28 in 21.27 seconds
+[2025-07-22 09:25:48,593] INFO - 🚀 Starting Batch #31 with 3 items
+[2025-07-22 09:25:51,603] INFO - [Batch 29] Processed invoice: GJ1242503BL95794
+[2025-07-22 09:25:52,073] INFO - [Batch 30] GJ1242502BJ64556 - Invoices Found: ['GJ1242502BJ64556']
+[2025-07-22 09:25:53,455] INFO - [Batch 31] GJ1242502BJ52640 - Invoices Found: ['GJ1242502BJ52640']
+[2025-07-22 09:25:55,819] INFO - [Batch 29] GJ1242503BL40189 - Invoices Found: ['GJ1242503BL40189']
+[2025-07-22 09:25:56,167] INFO - [Batch 30] Processed invoice: GJ1242502BJ64556
+[2025-07-22 09:25:57,044] INFO - [Batch 31] Processed invoice: GJ1242502BJ52640
+[2025-07-22 09:26:00,153] INFO - [Batch 30] GJ1242502BJ56729 - Invoices Found: ['GJ1242502BJ56729']
+[2025-07-22 09:26:00,168] INFO - [Batch 29] Processed invoice: GJ1242503BL40189
+[2025-07-22 09:26:00,188] INFO - ✅ Completed Batch #29 in 23.36 seconds
+[2025-07-22 09:26:00,188] INFO - 🚀 Starting Batch #32 with 3 items
+[2025-07-22 09:26:02,491] INFO - [Batch 31] GJ1242502BI45429 - Invoices Found: ['GJ1242502BI45429']
+[2025-07-22 09:26:03,507] INFO - [Batch 30] Processed invoice: GJ1242502BJ56729
+[2025-07-22 09:26:03,529] INFO - ✅ Completed Batch #30 in 23.22 seconds
+[2025-07-22 09:26:03,530] INFO - 🚀 Starting Batch #33 with 3 items
+[2025-07-22 09:26:04,333] INFO - [Batch 32] GJ1242502BH78426 - Invoices Found: ['GJ1242502BH78426']
+[2025-07-22 09:26:06,121] INFO - [Batch 31] Processed invoice: GJ1242502BI45429
+[2025-07-22 09:26:09,327] INFO - [Batch 33] GJ1242501BG49237 - Invoices Found: ['GJ1242501BG49237']
+[2025-07-22 09:26:10,108] INFO - [Batch 31] GJ1242502BI40272 - Invoices Found: ['GJ1242502BI40272']
+[2025-07-22 09:26:10,110] INFO - [Batch 32] Processed invoice: GJ1242502BH78426
+[2025-07-22 09:26:16,895] INFO - [Batch 32] GJ1242502BH25572 - Invoices Found: ['GJ1242502BH25572']
+[2025-07-22 09:26:17,210] INFO - [Batch 33] Processed invoice: GJ1242501BG49237
+[2025-07-22 09:26:17,812] INFO - [Batch 31] Processed invoice: GJ1242502BI40272
+[2025-07-22 09:26:17,836] INFO - ✅ Completed Batch #31 in 29.24 seconds
+[2025-07-22 09:26:17,836] INFO - 🚀 Starting Batch #34 with 3 items
+[2025-07-22 09:26:19,001] INFO - [Batch 32] Processed invoice: GJ1242502BH25572
+[2025-07-22 09:26:23,497] INFO - [Batch 33] GJ1242501BF81438 - Invoices Found: ['GJ1242501BF81438']
+[2025-07-22 09:26:24,098] INFO - [Batch 34] GJ1242501BE19449 - Invoices Found: ['GJ1242501BE19449']
+[2025-07-22 09:26:24,167] INFO - [Batch 32] GJ1242501BG53524 - Invoices Found: ['GJ1242501BG53524']
+[2025-07-22 09:26:30,803] INFO - [Batch 34] Processed invoice: GJ1242501BE19449
+[2025-07-22 09:26:30,979] INFO - [Batch 33] Processed invoice: GJ1242501BF81438
+[2025-07-22 09:26:30,994] INFO - [Batch 32] Processed invoice: GJ1242501BG53524
+[2025-07-22 09:26:31,016] INFO - ✅ Completed Batch #32 in 30.83 seconds
+[2025-07-22 09:26:31,016] INFO - 🚀 Starting Batch #35 with 3 items
+[2025-07-22 09:26:38,430] INFO - [Batch 34] GJ1242501BE11726 - Invoices Found: ['GJ1242501BE11726']
+[2025-07-22 09:26:38,631] INFO - [Batch 33] GJ1242501BF76072 - Invoices Found: ['GJ1242501BF76072']
+[2025-07-22 09:26:38,664] INFO - [Batch 35] WB1242501BP98081 - Invoices Found: ['WB1242501BP98081']
+[2025-07-22 09:26:42,287] INFO - [Batch 33] Processed invoice: GJ1242501BF76072
+[2025-07-22 09:26:42,310] INFO - ✅ Completed Batch #33 in 38.78 seconds
+[2025-07-22 09:26:42,310] INFO - 🚀 Starting Batch #36 with 3 items
+[2025-07-22 09:26:43,550] INFO - [Batch 34] Processed invoice: GJ1242501BE11726
+[2025-07-22 09:26:43,956] INFO - [Batch 35] Processed invoice: WB1242501BP98081
+[2025-07-22 09:26:47,593] INFO - [Batch 36] RJ1242501AR20945 - Invoices Found: ['RJ1242501AR20945']
+[2025-07-22 09:26:47,948] INFO - [Batch 35] RJ1242502AU10200 - Invoices Found: ['RJ1242502AU10200']
+[2025-07-22 09:26:48,371] INFO - [Batch 34] WB1242503BW11932 - Invoices Found: ['WB1242503BW11932']
+[2025-07-22 09:26:50,147] INFO - [Batch 35] Processed invoice: RJ1242502AU10200
+[2025-07-22 09:26:50,606] INFO - [Batch 36] Processed invoice: RJ1242501AR20945
+[2025-07-22 09:26:51,464] INFO - [Batch 34] Processed invoice: WB1242503BW11932
+[2025-07-22 09:26:51,491] INFO - ✅ Completed Batch #34 in 33.66 seconds
+[2025-07-22 09:26:51,492] INFO - 🚀 Starting Batch #37 with 3 items
+[2025-07-22 09:26:56,859] INFO - [Batch 35] RJ1242502AT96357 - Invoices Found: ['RJ1242502AT96357']
+[2025-07-22 09:26:58,181] INFO - [Batch 36] UT1242511AD83500 - Invoices Found: ['UT1242511AD83500']
+[2025-07-22 09:26:58,470] INFO - [Batch 37] UT1242502AF33958 - Invoices Found: ['UT1242502AF33958']
+[2025-07-22 09:27:01,724] INFO - [Batch 35] Processed invoice: RJ1242502AT96357
+[2025-07-22 09:27:01,746] INFO - ✅ Completed Batch #35 in 30.73 seconds
+[2025-07-22 09:27:01,747] INFO - 🚀 Starting Batch #38 with 3 items
+[2025-07-22 09:27:01,783] INFO - [Batch 36] Processed invoice: UT1242511AD83500
+[2025-07-22 09:27:01,892] INFO - [Batch 37] Processed invoice: UT1242502AF33958
+[2025-07-22 09:27:05,452] INFO - [Batch 36] UT1242502AF34456 - Invoices Found: ['UT1242502AF34456']
+[2025-07-22 09:27:05,600] INFO - [Batch 37] MH2252605AD13400 - Invoices Found: ['MH2252605AD13400']
+[2025-07-22 09:27:05,814] INFO - [Batch 38] GJ2252605AA98036 - Invoices Found: ['GJ2252605AA98036']
+[2025-07-22 09:27:08,907] INFO - [Batch 36] Processed invoice: UT1242502AF34456
+[2025-07-22 09:27:08,931] INFO - ✅ Completed Batch #36 in 26.62 seconds
+[2025-07-22 09:27:08,931] INFO - 🚀 Starting Batch #39 with 3 items
+[2025-07-22 09:27:08,956] INFO - [Batch 37] Processed invoice: MH2252605AD13400
+[2025-07-22 09:27:09,562] INFO - [Batch 38] Processed invoice: GJ2252605AA98036
+[2025-07-22 09:27:12,846] INFO - [Batch 39] TS1252605AE90515 - Invoices Found: ['TS1252605AE90515']
+[2025-07-22 09:27:13,333] INFO - [Batch 37] MH2252605AD03104 - Invoices Found: ['MH2252605AD03104']
+[2025-07-22 09:27:14,287] INFO - [Batch 38] GJ2252605AA80556 - Invoices Found: ['GJ2252605AA80556']
+[2025-07-22 09:27:16,009] INFO - [Batch 39] Processed invoice: TS1252605AE90515
+[2025-07-22 09:27:17,605] INFO - [Batch 37] Processed invoice: MH2252605AD03104
+[2025-07-22 09:27:17,633] INFO - [Batch 38] Processed invoice: GJ2252605AA80556
+[2025-07-22 09:27:17,633] INFO - ✅ Completed Batch #37 in 26.14 seconds
+[2025-07-22 09:27:17,633] INFO - 🚀 Starting Batch #40 with 3 items
+[2025-07-22 09:27:18,635] INFO - [Batch 39] MH1252605AV34477 - Invoices Found: ['MH1252605AV34477']
+[2025-07-22 09:27:21,008] INFO - [Batch 39] Processed invoice: MH1252605AV34477
+[2025-07-22 09:27:25,221] INFO - [Batch 38] GJ2252605AA65911 - Invoices Found: ['GJ2252605AA65911']
+[2025-07-22 09:27:25,244] INFO - [Batch 39] MH1252605AU59778 - Invoices Found: ['MH1252605AU59778']
+[2025-07-22 09:27:25,421] INFO - [Batch 40] MH1252605AS92243 - Invoices Found: ['MH1252605AS92243']
+[2025-07-22 09:27:27,766] INFO - [Batch 39] Processed invoice: MH1252605AU59778
+[2025-07-22 09:27:27,788] INFO - ✅ Completed Batch #39 in 18.86 seconds
+[2025-07-22 09:27:27,788] INFO - 🚀 Starting Batch #41 with 3 items
+[2025-07-22 09:27:29,000] INFO - [Batch 38] Processed invoice: GJ2252605AA65911
+[2025-07-22 09:27:29,022] INFO - ✅ Completed Batch #38 in 27.28 seconds
+[2025-07-22 09:27:29,022] INFO - 🚀 Starting Batch #42 with 3 items
+[2025-07-22 09:27:29,399] INFO - [Batch 40] Processed invoice: MH1252605AS92243
+[2025-07-22 09:27:30,807] INFO - [Batch 41] GJ1252605AG56710 - Invoices Found: ['GJ1252605AG56710']
+[2025-07-22 09:27:33,525] INFO - [Batch 42] GJ1252605AE52552 - Invoices Found: ['GJ1252605AE52552']
+[2025-07-22 09:27:33,971] INFO - [Batch 40] MH1252605AS50842 - Invoices Found: ['MH1252605AS50842']
+[2025-07-22 09:27:34,348] INFO - [Batch 41] Processed invoice: GJ1252605AG56710
+[2025-07-22 09:27:38,082] INFO - [Batch 42] Processed invoice: GJ1252605AE52552
+[2025-07-22 09:27:38,821] INFO - [Batch 40] Processed invoice: MH1252605AS50842
+[2025-07-22 09:27:39,327] INFO - [Batch 41] GJ1252605AF82233 - Invoices Found: ['GJ1252605AF82233']
+[2025-07-22 09:27:41,377] INFO - [Batch 42] GJ1252605AE50498 - Invoices Found: ['GJ1252605AE50498']
+[2025-07-22 09:27:42,555] INFO - [Batch 40] MH1252605AO19306 - Invoices Found: ['MH1252605AO19306']
+[2025-07-22 09:27:42,653] INFO - [Batch 41] Processed invoice: GJ1252605AF82233
+[2025-07-22 09:27:43,433] INFO - [Batch 42] Processed invoice: GJ1252605AE50498
+[2025-07-22 09:27:46,082] INFO - [Batch 41] GJ1252605AF15129 - Invoices Found: ['GJ1252605AF15129']
+[2025-07-22 09:27:46,245] INFO - [Batch 40] Processed invoice: MH1252605AO19306
+[2025-07-22 09:27:46,266] INFO - ✅ Completed Batch #40 in 28.63 seconds
+[2025-07-22 09:27:46,266] INFO - 🚀 Starting Batch #43 with 3 items
+[2025-07-22 09:27:46,767] INFO - [Batch 42] GJ1252605AE23938 - Invoices Found: ['GJ1252605AE23938']
+[2025-07-22 09:27:48,702] INFO - [Batch 41] Processed invoice: GJ1252605AF15129
+[2025-07-22 09:27:48,726] INFO - ✅ Completed Batch #41 in 20.94 seconds
+[2025-07-22 09:27:48,726] INFO - 🚀 Starting Batch #44 with 3 items
+[2025-07-22 09:27:50,294] INFO - [Batch 43] GJ1252605AD52592 - Invoices Found: ['GJ1252605AD52592']
+[2025-07-22 09:27:50,640] INFO - [Batch 42] Processed invoice: GJ1252605AE23938
+[2025-07-22 09:27:50,663] INFO - ✅ Completed Batch #42 in 21.64 seconds
+[2025-07-22 09:27:50,663] INFO - 🚀 Starting Batch #45 with 2 items
+[2025-07-22 09:27:52,438] INFO - [Batch 44] MH2242512AM01026 - Invoices Found: ['MH2242512AM01026']
+[2025-07-22 09:27:53,645] INFO - [Batch 43] Processed invoice: GJ1252605AD52592
+[2025-07-22 09:27:54,523] INFO - [Batch 45] GJ2242512AD37178 - Invoices Found: ['GJ2242512AD37178']
+[2025-07-22 09:27:56,067] INFO - [Batch 44] Processed invoice: MH2242512AM01026
+[2025-07-22 09:27:57,577] INFO - [Batch 43] MH2242512AM34308 - Invoices Found: ['MH2242512AM34308']
+[2025-07-22 09:27:57,759] INFO - [Batch 45] Processed invoice: GJ2242512AD37178
+[2025-07-22 09:27:59,329] INFO - [Batch 44] MH2242512AL97015 - Invoices Found: ['MH2242512AL97015']
+[2025-07-22 09:28:00,979] INFO - [Batch 43] Processed invoice: MH2242512AM34308
+[2025-07-22 09:28:01,504] INFO - [Batch 45] GJ2242512AD36499 - Invoices Found: ['GJ2242512AD36499']
+[2025-07-22 09:28:02,656] INFO - [Batch 44] Processed invoice: MH2242512AL97015
+[2025-07-22 09:28:05,529] INFO - [Batch 43] MH2242512AM29546 - Invoices Found: ['MH2242512AM29546']
+[2025-07-22 09:28:05,641] INFO - [Batch 45] Processed invoice: GJ2242512AD36499
+[2025-07-22 09:28:05,661] INFO - ✅ Completed Batch #45 in 15.0 seconds
+[2025-07-22 09:28:06,239] INFO - [Batch 44] GJ2242512AD49765 - Invoices Found: ['GJ2242512AD49765']
+[2025-07-22 09:28:09,130] INFO - [Batch 43] Processed invoice: MH2242512AM29546
+[2025-07-22 09:28:09,151] INFO - ✅ Completed Batch #43 in 22.89 seconds
+[2025-07-22 09:28:10,038] INFO - [Batch 44] Processed invoice: GJ2242512AD49765
+[2025-07-22 09:28:10,058] INFO - ✅ Completed Batch #44 in 21.33 seconds
