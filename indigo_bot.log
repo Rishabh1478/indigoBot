@@ -563,3 +563,1287 @@ Exception: Page.goto: Connection closed while reading from the driver
 [2025-07-22 09:28:09,151] INFO - ✅ Completed Batch #43 in 22.89 seconds
 [2025-07-22 09:28:10,038] INFO - [Batch 44] Processed invoice: GJ2242512AD49765
 [2025-07-22 09:28:10,058] INFO - ✅ Completed Batch #44 in 21.33 seconds
+[2025-07-22 10:37:57,057] INFO - [Session Init] Indigo invoice page status: 403
+[2025-07-22 10:37:57,062] INFO - Processing mode: INVOICE
+[2025-07-22 10:37:57,066] INFO - Total batches: 67 | Max workers: 2
+[2025-07-22 10:37:57,066] INFO - 🚀 Starting Batch #1 with 2 items
+[2025-07-22 10:37:59,072] INFO - 🚀 Starting Batch #2 with 2 items
+[2025-07-22 10:38:01,152] INFO - [Batch 1] TN2242512AG04743 - Invoices Found: ['TN2242512AG04743']
+[2025-07-22 10:38:02,737] INFO - [Batch 2] KA2242512AG82037 - Invoices Found: ['KA2242512AG82037']
+[2025-07-22 10:38:06,628] ERROR - [Batch 1] ❌ Error processing invoice TN2242512AG04743: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+Traceback (most recent call last):
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 82, in process_batch
+    self.make_data_fetch_request(email, invoice)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 190, in make_data_fetch_request
+    pdfkit.from_file(html_path, pdf_path)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/api.py", line 51, in from_file
+    return r.to_pdf(output_path)
+           ~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 201, in to_pdf
+    self.handle_error(exit_code, stderr)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 155, in handle_error
+    raise IOError('wkhtmltopdf reported an error:\n' + stderr)
+OSError: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+
+[2025-07-22 10:38:07,117] ERROR - [Batch 2] ❌ Error processing invoice KA2242512AG82037: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+Traceback (most recent call last):
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 82, in process_batch
+    self.make_data_fetch_request(email, invoice)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 190, in make_data_fetch_request
+    pdfkit.from_file(html_path, pdf_path)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/api.py", line 51, in from_file
+    return r.to_pdf(output_path)
+           ~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 201, in to_pdf
+    self.handle_error(exit_code, stderr)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 155, in handle_error
+    raise IOError('wkhtmltopdf reported an error:\n' + stderr)
+OSError: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+
+[2025-07-22 10:38:10,621] INFO - [Batch 1] TN2242512AG02026 - Invoices Found: ['TN2242512AG02026']
+[2025-07-22 10:38:13,557] INFO - [Batch 2] KA2242512AG79255 - Invoices Found: ['KA2242512AG79255']
+[2025-07-22 10:38:14,756] ERROR - [Batch 1] ❌ Error processing invoice TN2242512AG02026: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+Traceback (most recent call last):
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 82, in process_batch
+    self.make_data_fetch_request(email, invoice)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 190, in make_data_fetch_request
+    pdfkit.from_file(html_path, pdf_path)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/api.py", line 51, in from_file
+    return r.to_pdf(output_path)
+           ~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 201, in to_pdf
+    self.handle_error(exit_code, stderr)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 155, in handle_error
+    raise IOError('wkhtmltopdf reported an error:\n' + stderr)
+OSError: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+
+[2025-07-22 10:38:14,757] INFO - ✅ Completed Batch #1 in 17.69 seconds
+[2025-07-22 10:38:14,757] INFO - 🚀 Starting Batch #3 with 2 items
+[2025-07-22 10:38:18,506] INFO - [Batch 3] KA2242512AG69760 - Invoices Found: ['KA2242512AG69760']
+[2025-07-22 10:38:19,100] ERROR - [Batch 2] ❌ Error processing invoice KA2242512AG79255: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+Traceback (most recent call last):
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 82, in process_batch
+    self.make_data_fetch_request(email, invoice)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 190, in make_data_fetch_request
+    pdfkit.from_file(html_path, pdf_path)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/api.py", line 51, in from_file
+    return r.to_pdf(output_path)
+           ~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 201, in to_pdf
+    self.handle_error(exit_code, stderr)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 155, in handle_error
+    raise IOError('wkhtmltopdf reported an error:\n' + stderr)
+OSError: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+
+[2025-07-22 10:38:19,101] INFO - ✅ Completed Batch #2 in 20.03 seconds
+[2025-07-22 10:38:19,101] INFO - 🚀 Starting Batch #4 with 2 items
+[2025-07-22 10:38:22,637] INFO - [Batch 4] KA2242512AG36547 - Invoices Found: ['KA2242512AG36547']
+[2025-07-22 10:38:22,637] ERROR - [Batch 3] ❌ Error processing invoice KA2242512AG69760: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+Traceback (most recent call last):
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 82, in process_batch
+    self.make_data_fetch_request(email, invoice)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 190, in make_data_fetch_request
+    pdfkit.from_file(html_path, pdf_path)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/api.py", line 51, in from_file
+    return r.to_pdf(output_path)
+           ~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 201, in to_pdf
+    self.handle_error(exit_code, stderr)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 155, in handle_error
+    raise IOError('wkhtmltopdf reported an error:\n' + stderr)
+OSError: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+
+[2025-07-22 10:38:26,816] INFO - [Batch 3] KA2242512AG53116 - Invoices Found: ['KA2242512AG53116']
+[2025-07-22 10:38:28,058] ERROR - [Batch 4] ❌ Error processing invoice KA2242512AG36547: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+Traceback (most recent call last):
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 82, in process_batch
+    self.make_data_fetch_request(email, invoice)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 190, in make_data_fetch_request
+    pdfkit.from_file(html_path, pdf_path)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/api.py", line 51, in from_file
+    return r.to_pdf(output_path)
+           ~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 201, in to_pdf
+    self.handle_error(exit_code, stderr)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 155, in handle_error
+    raise IOError('wkhtmltopdf reported an error:\n' + stderr)
+OSError: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+
+[2025-07-22 10:38:31,373] ERROR - [Batch 3] ❌ Error processing invoice KA2242512AG53116: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+Traceback (most recent call last):
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 82, in process_batch
+    self.make_data_fetch_request(email, invoice)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 190, in make_data_fetch_request
+    pdfkit.from_file(html_path, pdf_path)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/api.py", line 51, in from_file
+    return r.to_pdf(output_path)
+           ~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 201, in to_pdf
+    self.handle_error(exit_code, stderr)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 155, in handle_error
+    raise IOError('wkhtmltopdf reported an error:\n' + stderr)
+OSError: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+
+[2025-07-22 10:38:31,374] INFO - ✅ Completed Batch #3 in 16.62 seconds
+[2025-07-22 10:38:31,374] INFO - 🚀 Starting Batch #5 with 2 items
+[2025-07-22 10:38:32,160] INFO - [Batch 4] MH2242512AL70601 - Invoices Found: ['MH2242512AL70601']
+[2025-07-22 10:38:35,103] INFO - [Batch 5] MH2242512AL67032 - Invoices Found: ['MH2242512AL67032']
+[2025-07-22 10:38:36,334] ERROR - [Batch 4] ❌ Error processing invoice MH2242512AL70601: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+Traceback (most recent call last):
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 82, in process_batch
+    self.make_data_fetch_request(email, invoice)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 190, in make_data_fetch_request
+    pdfkit.from_file(html_path, pdf_path)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/api.py", line 51, in from_file
+    return r.to_pdf(output_path)
+           ~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 201, in to_pdf
+    self.handle_error(exit_code, stderr)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 155, in handle_error
+    raise IOError('wkhtmltopdf reported an error:\n' + stderr)
+OSError: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+
+[2025-07-22 10:38:36,335] INFO - ✅ Completed Batch #4 in 17.23 seconds
+[2025-07-22 10:38:36,335] INFO - 🚀 Starting Batch #6 with 2 items
+[2025-07-22 10:38:39,600] ERROR - [Batch 5] ❌ Error processing invoice MH2242512AL67032: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+Traceback (most recent call last):
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 82, in process_batch
+    self.make_data_fetch_request(email, invoice)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 190, in make_data_fetch_request
+    pdfkit.from_file(html_path, pdf_path)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/api.py", line 51, in from_file
+    return r.to_pdf(output_path)
+           ~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 201, in to_pdf
+    self.handle_error(exit_code, stderr)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 155, in handle_error
+    raise IOError('wkhtmltopdf reported an error:\n' + stderr)
+OSError: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+
+[2025-07-22 10:38:41,233] INFO - [Batch 6] MH2242512AL44069 - Invoices Found: ['MH2242512AL44069']
+[2025-07-22 10:38:43,319] INFO - [Batch 5] MH2242512AL56777 - Invoices Found: ['MH2242512AL56777']
+[2025-07-22 10:38:45,607] ERROR - [Batch 6] ❌ Error processing invoice MH2242512AL44069: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+Traceback (most recent call last):
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 82, in process_batch
+    self.make_data_fetch_request(email, invoice)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 190, in make_data_fetch_request
+    pdfkit.from_file(html_path, pdf_path)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/api.py", line 51, in from_file
+    return r.to_pdf(output_path)
+           ~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 201, in to_pdf
+    self.handle_error(exit_code, stderr)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 155, in handle_error
+    raise IOError('wkhtmltopdf reported an error:\n' + stderr)
+OSError: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+
+[2025-07-22 10:38:48,585] ERROR - [Batch 5] ❌ Error processing invoice MH2242512AL56777: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+Traceback (most recent call last):
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 82, in process_batch
+    self.make_data_fetch_request(email, invoice)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 190, in make_data_fetch_request
+    pdfkit.from_file(html_path, pdf_path)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/api.py", line 51, in from_file
+    return r.to_pdf(output_path)
+           ~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 201, in to_pdf
+    self.handle_error(exit_code, stderr)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 155, in handle_error
+    raise IOError('wkhtmltopdf reported an error:\n' + stderr)
+OSError: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+
+[2025-07-22 10:38:48,586] INFO - ✅ Completed Batch #5 in 17.21 seconds
+[2025-07-22 10:38:48,586] INFO - 🚀 Starting Batch #7 with 2 items
+[2025-07-22 10:38:49,593] INFO - [Batch 6] MH2242512AL20442 - Invoices Found: ['MH2242512AL20442']
+[2025-07-22 10:38:52,230] INFO - [Batch 7] GJ2242512AD19147 - Invoices Found: ['GJ2242512AD19147']
+[2025-07-22 10:38:55,555] ERROR - [Batch 6] ❌ Error processing invoice MH2242512AL20442: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+Traceback (most recent call last):
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 82, in process_batch
+    self.make_data_fetch_request(email, invoice)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 190, in make_data_fetch_request
+    pdfkit.from_file(html_path, pdf_path)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/api.py", line 51, in from_file
+    return r.to_pdf(output_path)
+           ~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 201, in to_pdf
+    self.handle_error(exit_code, stderr)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 155, in handle_error
+    raise IOError('wkhtmltopdf reported an error:\n' + stderr)
+OSError: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+
+[2025-07-22 10:38:55,556] INFO - ✅ Completed Batch #6 in 19.22 seconds
+[2025-07-22 10:38:55,556] INFO - 🚀 Starting Batch #8 with 2 items
+[2025-07-22 10:38:58,601] ERROR - [Batch 7] ❌ Error processing invoice GJ2242512AD19147: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+Traceback (most recent call last):
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 82, in process_batch
+    self.make_data_fetch_request(email, invoice)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 190, in make_data_fetch_request
+    pdfkit.from_file(html_path, pdf_path)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/api.py", line 51, in from_file
+    return r.to_pdf(output_path)
+           ~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 201, in to_pdf
+    self.handle_error(exit_code, stderr)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 155, in handle_error
+    raise IOError('wkhtmltopdf reported an error:\n' + stderr)
+OSError: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+
+[2025-07-22 10:39:00,002] INFO - [Batch 8] CG2242512AA91348 - Invoices Found: ['CG2242512AA91348']
+[2025-07-22 10:39:02,466] INFO - [Batch 7] GJ2242512AD13729 - Invoices Found: ['GJ2242512AD13729']
+[2025-07-22 10:39:04,734] ERROR - [Batch 8] ❌ Error processing invoice CG2242512AA91348: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+Traceback (most recent call last):
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 82, in process_batch
+    self.make_data_fetch_request(email, invoice)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 190, in make_data_fetch_request
+    pdfkit.from_file(html_path, pdf_path)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/api.py", line 51, in from_file
+    return r.to_pdf(output_path)
+           ~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 201, in to_pdf
+    self.handle_error(exit_code, stderr)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 155, in handle_error
+    raise IOError('wkhtmltopdf reported an error:\n' + stderr)
+OSError: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+
+[2025-07-22 10:39:08,236] ERROR - [Batch 7] ❌ Error processing invoice GJ2242512AD13729: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+Traceback (most recent call last):
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 82, in process_batch
+    self.make_data_fetch_request(email, invoice)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 190, in make_data_fetch_request
+    pdfkit.from_file(html_path, pdf_path)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/api.py", line 51, in from_file
+    return r.to_pdf(output_path)
+           ~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 201, in to_pdf
+    self.handle_error(exit_code, stderr)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 155, in handle_error
+    raise IOError('wkhtmltopdf reported an error:\n' + stderr)
+OSError: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+
+[2025-07-22 10:39:08,237] INFO - ✅ Completed Batch #7 in 19.65 seconds
+[2025-07-22 10:39:08,237] INFO - 🚀 Starting Batch #9 with 2 items
+[2025-07-22 10:39:08,836] INFO - [Batch 8] JS2242512AA73375 - Invoices Found: ['JS2242512AA73375']
+[2025-07-22 10:39:13,036] ERROR - [Batch 8] ❌ Error processing invoice JS2242512AA73375: wkhtmltopdf exited with non-zero code -2. error:
+Unknown Error
+Traceback (most recent call last):
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 82, in process_batch
+    self.make_data_fetch_request(email, invoice)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 190, in make_data_fetch_request
+    pdfkit.from_file(html_path, pdf_path)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/api.py", line 51, in from_file
+    return r.to_pdf(output_path)
+           ~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 201, in to_pdf
+    self.handle_error(exit_code, stderr)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 158, in handle_error
+    raise IOError("wkhtmltopdf exited with non-zero code {0}. error:\n{1}".format(exit_code, error_msg))
+OSError: wkhtmltopdf exited with non-zero code -2. error:
+Unknown Error
+[2025-07-22 10:39:13,037] INFO - ✅ Completed Batch #8 in 17.48 seconds
+[2025-07-22 10:39:13,037] INFO - 🚀 Starting Batch #10 with 2 items
+[2025-07-22 10:39:16,472] INFO - [Batch 9] JS2242512AA72402 - Invoices Found: ['JS2242512AA72402']
+[2025-07-22 10:39:18,560] INFO - [Batch 10] WB2242512AE92192 - Invoices Found: ['WB2242512AE92192']
+[2025-07-22 10:39:23,221] ERROR - [Batch 10] ❌ Error processing invoice WB2242512AE92192: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+Traceback (most recent call last):
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 82, in process_batch
+    self.make_data_fetch_request(email, invoice)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 190, in make_data_fetch_request
+    pdfkit.from_file(html_path, pdf_path)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/api.py", line 51, in from_file
+    return r.to_pdf(output_path)
+           ~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 201, in to_pdf
+    self.handle_error(exit_code, stderr)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 155, in handle_error
+    raise IOError('wkhtmltopdf reported an error:\n' + stderr)
+OSError: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+
+[2025-07-22 10:39:23,900] ERROR - [Batch 9] ❌ Error processing invoice JS2242512AA72402: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+Traceback (most recent call last):
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 82, in process_batch
+    self.make_data_fetch_request(email, invoice)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 190, in make_data_fetch_request
+    pdfkit.from_file(html_path, pdf_path)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/api.py", line 51, in from_file
+    return r.to_pdf(output_path)
+           ~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 201, in to_pdf
+    self.handle_error(exit_code, stderr)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 155, in handle_error
+    raise IOError('wkhtmltopdf reported an error:\n' + stderr)
+OSError: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+
+[2025-07-22 10:39:28,540] INFO - [Batch 9] WB2242512AF06856 - Invoices Found: ['WB2242512AF06856']
+[2025-07-22 10:39:28,959] INFO - [Batch 10] WB2242512AE77731 - Invoices Found: ['WB2242512AE77731']
+[2025-07-22 10:39:33,781] ERROR - [Batch 10] ❌ Error processing invoice WB2242512AE77731: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+Traceback (most recent call last):
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 82, in process_batch
+    self.make_data_fetch_request(email, invoice)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 190, in make_data_fetch_request
+    pdfkit.from_file(html_path, pdf_path)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/api.py", line 51, in from_file
+    return r.to_pdf(output_path)
+           ~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 201, in to_pdf
+    self.handle_error(exit_code, stderr)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 155, in handle_error
+    raise IOError('wkhtmltopdf reported an error:\n' + stderr)
+OSError: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+
+[2025-07-22 10:39:33,782] INFO - ✅ Completed Batch #10 in 20.75 seconds
+[2025-07-22 10:39:33,782] INFO - 🚀 Starting Batch #11 with 2 items
+[2025-07-22 10:39:35,294] ERROR - [Batch 9] ❌ Error processing invoice WB2242512AF06856: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+Traceback (most recent call last):
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 82, in process_batch
+    self.make_data_fetch_request(email, invoice)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 190, in make_data_fetch_request
+    pdfkit.from_file(html_path, pdf_path)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/api.py", line 51, in from_file
+    return r.to_pdf(output_path)
+           ~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 201, in to_pdf
+    self.handle_error(exit_code, stderr)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 155, in handle_error
+    raise IOError('wkhtmltopdf reported an error:\n' + stderr)
+OSError: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+
+[2025-07-22 10:39:35,295] INFO - ✅ Completed Batch #9 in 27.06 seconds
+[2025-07-22 10:39:35,295] INFO - 🚀 Starting Batch #12 with 2 items
+[2025-07-22 10:39:39,829] INFO - [Batch 11] DL2242512AL30143 - Invoices Found: ['DL2242512AL30143']
+[2025-07-22 10:39:41,218] INFO - [Batch 12] KA2242503AK15006 - Invoices Found: ['KA2242503AK15006']
+[2025-07-22 10:39:44,323] ERROR - [Batch 11] ❌ Error processing invoice DL2242512AL30143: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+Traceback (most recent call last):
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 82, in process_batch
+    self.make_data_fetch_request(email, invoice)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 190, in make_data_fetch_request
+    pdfkit.from_file(html_path, pdf_path)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/api.py", line 51, in from_file
+    return r.to_pdf(output_path)
+           ~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 201, in to_pdf
+    self.handle_error(exit_code, stderr)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 155, in handle_error
+    raise IOError('wkhtmltopdf reported an error:\n' + stderr)
+OSError: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+
+[2025-07-22 10:39:47,813] ERROR - [Batch 12] ❌ Error processing invoice KA2242503AK15006: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+Traceback (most recent call last):
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 82, in process_batch
+    self.make_data_fetch_request(email, invoice)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 190, in make_data_fetch_request
+    pdfkit.from_file(html_path, pdf_path)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/api.py", line 51, in from_file
+    return r.to_pdf(output_path)
+           ~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 201, in to_pdf
+    self.handle_error(exit_code, stderr)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 155, in handle_error
+    raise IOError('wkhtmltopdf reported an error:\n' + stderr)
+OSError: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+
+[2025-07-22 10:39:47,825] INFO - [Batch 11] WB2242501AF92989 - Invoices Found: ['WB2242501AF92989']
+[2025-07-22 10:39:52,379] ERROR - [Batch 11] ❌ Error processing invoice WB2242501AF92989: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+Traceback (most recent call last):
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 82, in process_batch
+    self.make_data_fetch_request(email, invoice)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 190, in make_data_fetch_request
+    pdfkit.from_file(html_path, pdf_path)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/api.py", line 51, in from_file
+    return r.to_pdf(output_path)
+           ~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 201, in to_pdf
+    self.handle_error(exit_code, stderr)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 155, in handle_error
+    raise IOError('wkhtmltopdf reported an error:\n' + stderr)
+OSError: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+
+[2025-07-22 10:39:52,380] INFO - ✅ Completed Batch #11 in 18.6 seconds
+[2025-07-22 10:39:52,380] INFO - 🚀 Starting Batch #13 with 2 items
+[2025-07-22 10:39:54,896] INFO - [Batch 12] MH2242503AQ72802 - Invoices Found: ['MH2242503AQ72802']
+[2025-07-22 10:39:58,559] INFO - [Batch 13] GJ2242503AE77718 - Invoices Found: ['GJ2242503AE77718']
+[2025-07-22 10:39:59,682] ERROR - [Batch 12] ❌ Error processing invoice MH2242503AQ72802: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+Traceback (most recent call last):
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 82, in process_batch
+    self.make_data_fetch_request(email, invoice)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 190, in make_data_fetch_request
+    pdfkit.from_file(html_path, pdf_path)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/api.py", line 51, in from_file
+    return r.to_pdf(output_path)
+           ~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 201, in to_pdf
+    self.handle_error(exit_code, stderr)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 155, in handle_error
+    raise IOError('wkhtmltopdf reported an error:\n' + stderr)
+OSError: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+
+[2025-07-22 10:39:59,683] INFO - ✅ Completed Batch #12 in 24.39 seconds
+[2025-07-22 10:39:59,683] INFO - 🚀 Starting Batch #14 with 2 items
+[2025-07-22 10:40:03,370] ERROR - [Batch 13] ❌ Error processing invoice GJ2242503AE77718: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+Traceback (most recent call last):
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 82, in process_batch
+    self.make_data_fetch_request(email, invoice)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 190, in make_data_fetch_request
+    pdfkit.from_file(html_path, pdf_path)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/api.py", line 51, in from_file
+    return r.to_pdf(output_path)
+           ~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 201, in to_pdf
+    self.handle_error(exit_code, stderr)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 155, in handle_error
+    raise IOError('wkhtmltopdf reported an error:\n' + stderr)
+OSError: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+
+[2025-07-22 10:40:04,120] INFO - [Batch 14] RJ2252604AA05454 - Invoices Found: ['RJ2252604AA05454']
+[2025-07-22 10:40:07,634] INFO - [Batch 13] MH2252604AA49791 - Invoices Found: ['MH2252604AA49791']
+[2025-07-22 10:40:07,935] ERROR - [Batch 14] ❌ Error processing invoice RJ2252604AA05454: wkhtmltopdf exited with non-zero code -2. error:
+Unknown Error
+Traceback (most recent call last):
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 82, in process_batch
+    self.make_data_fetch_request(email, invoice)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 190, in make_data_fetch_request
+    pdf_path = os.path.join("PDFs", f"{invoice_number}.pdf")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/api.py", line 51, in from_file
+    return r.to_pdf(output_path)
+           ~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 201, in to_pdf
+    self.handle_error(exit_code, stderr)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 158, in handle_error
+    raise IOError("wkhtmltopdf exited with non-zero code {0}. error:\n{1}".format(exit_code, error_msg))
+OSError: wkhtmltopdf exited with non-zero code -2. error:
+Unknown Error
+[2025-07-22 10:40:50,239] INFO - [Session Init] Indigo invoice page status: 403
+[2025-07-22 10:40:50,244] INFO - Processing mode: INVOICE
+[2025-07-22 10:40:50,248] INFO - Total batches: 23 | Max workers: 6
+[2025-07-22 10:40:50,248] INFO - 🚀 Starting Batch #1 with 6 items
+[2025-07-22 10:40:52,254] INFO - 🚀 Starting Batch #2 with 6 items
+[2025-07-22 10:40:54,155] INFO - [Batch 1] TN2242512AG04743 - Invoices Found: ['TN2242512AG04743']
+[2025-07-22 10:40:54,257] INFO - 🚀 Starting Batch #3 with 6 items
+[2025-07-22 10:40:56,263] INFO - 🚀 Starting Batch #4 with 6 items
+[2025-07-22 10:40:56,366] INFO - [Batch 2] KA2242512AG36547 - Invoices Found: ['KA2242512AG36547']
+[2025-07-22 10:40:58,268] INFO - 🚀 Starting Batch #5 with 6 items
+[2025-07-22 10:40:58,309] INFO - [Batch 3] GJ2242512AD19147 - Invoices Found: ['GJ2242512AD19147']
+[2025-07-22 10:40:59,188] ERROR - [Batch 1] ❌ Error processing invoice TN2242512AG04743: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+Traceback (most recent call last):
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 82, in process_batch
+    self.make_data_fetch_request(email, invoice)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 191, in make_data_fetch_request
+    pdfkit.from_file(html_path, pdf_path)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/api.py", line 51, in from_file
+    return r.to_pdf(output_path)
+           ~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 201, in to_pdf
+    self.handle_error(exit_code, stderr)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 155, in handle_error
+    raise IOError('wkhtmltopdf reported an error:\n' + stderr)
+OSError: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+
+[2025-07-22 10:41:00,274] INFO - 🚀 Starting Batch #6 with 6 items
+[2025-07-22 10:41:03,534] ERROR - [Batch 3] ❌ Error processing invoice GJ2242512AD19147: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+Traceback (most recent call last):
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 82, in process_batch
+    self.make_data_fetch_request(email, invoice)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 191, in make_data_fetch_request
+    pdfkit.from_file(html_path, pdf_path)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/api.py", line 51, in from_file
+    return r.to_pdf(output_path)
+           ~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 201, in to_pdf
+    self.handle_error(exit_code, stderr)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 155, in handle_error
+    raise IOError('wkhtmltopdf reported an error:\n' + stderr)
+OSError: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+
+[2025-07-22 10:41:03,947] ERROR - [Batch 2] ❌ Error processing invoice KA2242512AG36547: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+Traceback (most recent call last):
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 82, in process_batch
+    self.make_data_fetch_request(email, invoice)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 191, in make_data_fetch_request
+    pdfkit.from_file(html_path, pdf_path)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/api.py", line 51, in from_file
+    return r.to_pdf(output_path)
+           ~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 201, in to_pdf
+    self.handle_error(exit_code, stderr)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 155, in handle_error
+    raise IOError('wkhtmltopdf reported an error:\n' + stderr)
+OSError: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+
+[2025-07-22 10:41:05,137] INFO - [Batch 6] MH1252604AB95923 - Invoices Found: ['MH1252604AB95923']
+[2025-07-22 10:41:06,304] INFO - [Batch 5] GJ2242503AE77718 - Invoices Found: ['GJ2242503AE77718']
+[2025-07-22 10:41:07,192] INFO - [Batch 1] TN2242512AG02026 - Invoices Found: ['TN2242512AG02026']
+[2025-07-22 10:41:08,432] INFO - [Batch 2] MH2242512AL70601 - Invoices Found: ['MH2242512AL70601']
+[2025-07-22 10:41:08,461] INFO - [Batch 4] WB2242512AE92192 - Invoices Found: ['WB2242512AE92192']
+[2025-07-22 10:41:08,528] INFO - [Batch 3] GJ2242512AD13729 - Invoices Found: ['GJ2242512AD13729']
+[2025-07-22 10:41:09,680] ERROR - [Batch 6] ❌ Error processing invoice MH1252604AB95923: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+Traceback (most recent call last):
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 82, in process_batch
+    self.make_data_fetch_request(email, invoice)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 191, in make_data_fetch_request
+    pdfkit.from_file(html_path, pdf_path)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/api.py", line 51, in from_file
+    return r.to_pdf(output_path)
+           ~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 201, in to_pdf
+    self.handle_error(exit_code, stderr)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 155, in handle_error
+    raise IOError('wkhtmltopdf reported an error:\n' + stderr)
+OSError: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+
+[2025-07-22 10:41:12,217] ERROR - [Batch 1] ❌ Error processing invoice TN2242512AG02026: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+Traceback (most recent call last):
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 82, in process_batch
+    self.make_data_fetch_request(email, invoice)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 191, in make_data_fetch_request
+    pdfkit.from_file(html_path, pdf_path)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/api.py", line 51, in from_file
+    return r.to_pdf(output_path)
+           ~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 201, in to_pdf
+    self.handle_error(exit_code, stderr)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 155, in handle_error
+    raise IOError('wkhtmltopdf reported an error:\n' + stderr)
+OSError: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+
+[2025-07-22 10:41:13,506] ERROR - [Batch 3] ❌ Error processing invoice GJ2242512AD13729: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+Traceback (most recent call last):
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 82, in process_batch
+    self.make_data_fetch_request(email, invoice)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 191, in make_data_fetch_request
+    pdfkit.from_file(html_path, pdf_path)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/api.py", line 51, in from_file
+    return r.to_pdf(output_path)
+           ~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 201, in to_pdf
+    self.handle_error(exit_code, stderr)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 155, in handle_error
+    raise IOError('wkhtmltopdf reported an error:\n' + stderr)
+OSError: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+
+[2025-07-22 10:41:14,279] ERROR - [Batch 5] ❌ Error processing invoice GJ2242503AE77718: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+Traceback (most recent call last):
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 82, in process_batch
+    self.make_data_fetch_request(email, invoice)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 191, in make_data_fetch_request
+    pdfkit.from_file(html_path, pdf_path)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/api.py", line 51, in from_file
+    return r.to_pdf(output_path)
+           ~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 201, in to_pdf
+    self.handle_error(exit_code, stderr)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 155, in handle_error
+    raise IOError('wkhtmltopdf reported an error:\n' + stderr)
+OSError: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+
+[2025-07-22 10:41:15,973] ERROR - [Batch 4] ❌ Error processing invoice WB2242512AE92192: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+Traceback (most recent call last):
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 82, in process_batch
+    self.make_data_fetch_request(email, invoice)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 191, in make_data_fetch_request
+    pdfkit.from_file(html_path, pdf_path)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/api.py", line 51, in from_file
+    return r.to_pdf(output_path)
+           ~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 201, in to_pdf
+    self.handle_error(exit_code, stderr)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 155, in handle_error
+    raise IOError('wkhtmltopdf reported an error:\n' + stderr)
+OSError: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+
+[2025-07-22 10:41:17,980] INFO - [Batch 5] MH2252604AA49791 - Invoices Found: ['MH2252604AA49791']
+[2025-07-22 10:41:18,475] INFO - [Batch 6] MH1252604AA78329 - Invoices Found: ['MH1252604AA78329']
+[2025-07-22 10:41:18,499] ERROR - [Batch 2] ❌ Error processing invoice MH2242512AL70601: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+Traceback (most recent call last):
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 82, in process_batch
+    self.make_data_fetch_request(email, invoice)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 191, in make_data_fetch_request
+    pdfkit.from_file(html_path, pdf_path)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/api.py", line 51, in from_file
+    return r.to_pdf(output_path)
+           ~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 201, in to_pdf
+    self.handle_error(exit_code, stderr)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 155, in handle_error
+    raise IOError('wkhtmltopdf reported an error:\n' + stderr)
+OSError: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+
+[2025-07-22 10:41:20,652] INFO - [Batch 1] KA2242512AG82037 - Invoices Found: ['KA2242512AG82037']
+[2025-07-22 10:41:21,220] INFO - [Batch 3] CG2242512AA91348 - Invoices Found: ['CG2242512AA91348']
+[2025-07-22 10:41:22,904] INFO - [Batch 2] MH2242512AL67032 - Invoices Found: ['MH2242512AL67032']
+[2025-07-22 10:41:23,300] INFO - [Batch 4] WB2242512AE77731 - Invoices Found: ['WB2242512AE77731']
+[2025-07-22 10:41:24,723] ERROR - [Batch 6] ❌ Error processing invoice MH1252604AA78329: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+Traceback (most recent call last):
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 82, in process_batch
+    self.make_data_fetch_request(email, invoice)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 191, in make_data_fetch_request
+    pdfkit.from_file(html_path, pdf_path)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/api.py", line 51, in from_file
+    return r.to_pdf(output_path)
+           ~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 201, in to_pdf
+    self.handle_error(exit_code, stderr)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 155, in handle_error
+    raise IOError('wkhtmltopdf reported an error:\n' + stderr)
+OSError: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+
+[2025-07-22 10:41:25,789] ERROR - [Batch 5] ❌ Error processing invoice MH2252604AA49791: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+Traceback (most recent call last):
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 82, in process_batch
+    self.make_data_fetch_request(email, invoice)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 191, in make_data_fetch_request
+    pdfkit.from_file(html_path, pdf_path)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/api.py", line 51, in from_file
+    return r.to_pdf(output_path)
+           ~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 201, in to_pdf
+    self.handle_error(exit_code, stderr)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 155, in handle_error
+    raise IOError('wkhtmltopdf reported an error:\n' + stderr)
+OSError: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+
+[2025-07-22 10:41:27,593] ERROR - [Batch 1] ❌ Error processing invoice KA2242512AG82037: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+Traceback (most recent call last):
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 82, in process_batch
+    self.make_data_fetch_request(email, invoice)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 191, in make_data_fetch_request
+    pdfkit.from_file(html_path, pdf_path)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/api.py", line 51, in from_file
+    return r.to_pdf(output_path)
+           ~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 201, in to_pdf
+    self.handle_error(exit_code, stderr)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 155, in handle_error
+    raise IOError('wkhtmltopdf reported an error:\n' + stderr)
+OSError: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+
+[2025-07-22 10:41:28,373] ERROR - [Batch 3] ❌ Error processing invoice CG2242512AA91348: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+Traceback (most recent call last):
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 82, in process_batch
+    self.make_data_fetch_request(email, invoice)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 191, in make_data_fetch_request
+    pdfkit.from_file(html_path, pdf_path)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/api.py", line 51, in from_file
+    return r.to_pdf(output_path)
+           ~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 201, in to_pdf
+    self.handle_error(exit_code, stderr)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 155, in handle_error
+    raise IOError('wkhtmltopdf reported an error:\n' + stderr)
+OSError: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+
+[2025-07-22 10:41:28,409] ERROR - [Batch 4] ❌ Error processing invoice WB2242512AE77731: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+Traceback (most recent call last):
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 82, in process_batch
+    self.make_data_fetch_request(email, invoice)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 191, in make_data_fetch_request
+    pdfkit.from_file(html_path, pdf_path)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/api.py", line 51, in from_file
+    return r.to_pdf(output_path)
+           ~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 201, in to_pdf
+    self.handle_error(exit_code, stderr)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 155, in handle_error
+    raise IOError('wkhtmltopdf reported an error:\n' + stderr)
+OSError: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+
+[2025-07-22 10:41:29,152] ERROR - [Batch 2] ❌ Error processing invoice MH2242512AL67032: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+Traceback (most recent call last):
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 82, in process_batch
+    self.make_data_fetch_request(email, invoice)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 191, in make_data_fetch_request
+    pdfkit.from_file(html_path, pdf_path)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/api.py", line 51, in from_file
+    return r.to_pdf(output_path)
+           ~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 201, in to_pdf
+    self.handle_error(exit_code, stderr)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 155, in handle_error
+    raise IOError('wkhtmltopdf reported an error:\n' + stderr)
+OSError: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+
+[2025-07-22 10:43:45,866] INFO - [Session Init] Indigo invoice page status: 403
+[2025-07-22 10:43:45,870] INFO - Processing mode: INVOICE
+[2025-07-22 10:43:45,873] INFO - Total batches: 27 | Max workers: 5
+[2025-07-22 10:43:45,873] INFO - 🚀 Starting Batch #1 with 5 items
+[2025-07-22 10:43:47,879] INFO - 🚀 Starting Batch #2 with 5 items
+[2025-07-22 10:43:49,559] INFO - [Batch 1] TN2242512AG04743 - Invoices Found: ['TN2242512AG04743']
+[2025-07-22 10:43:49,884] INFO - 🚀 Starting Batch #3 with 5 items
+[2025-07-22 10:43:51,588] INFO - [Batch 2] KA2242512AG53116 - Invoices Found: ['KA2242512AG53116']
+[2025-07-22 10:43:51,886] INFO - 🚀 Starting Batch #4 with 5 items
+[2025-07-22 10:43:53,841] INFO - [Batch 3] MH2242512AL44069 - Invoices Found: ['MH2242512AL44069']
+[2025-07-22 10:43:53,891] INFO - 🚀 Starting Batch #5 with 5 items
+[2025-07-22 10:43:55,648] INFO - [Batch 4] JS2242512AA73375 - Invoices Found: ['JS2242512AA73375']
+[2025-07-22 10:43:56,280] ERROR - [Batch 2] ❌ Error processing invoice KA2242512AG53116: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+Traceback (most recent call last):
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 82, in process_batch
+    self.make_data_fetch_request(email, invoice)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 191, in make_data_fetch_request
+    pdfkit.from_file(html_path, pdf_path)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/api.py", line 51, in from_file
+    return r.to_pdf(output_path)
+           ~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 201, in to_pdf
+    self.handle_error(exit_code, stderr)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 155, in handle_error
+    raise IOError('wkhtmltopdf reported an error:\n' + stderr)
+OSError: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+
+[2025-07-22 10:43:56,489] ERROR - [Batch 1] ❌ Error processing invoice TN2242512AG04743: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+Traceback (most recent call last):
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 82, in process_batch
+    self.make_data_fetch_request(email, invoice)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 191, in make_data_fetch_request
+    pdfkit.from_file(html_path, pdf_path)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/api.py", line 51, in from_file
+    return r.to_pdf(output_path)
+           ~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 201, in to_pdf
+    self.handle_error(exit_code, stderr)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 155, in handle_error
+    raise IOError('wkhtmltopdf reported an error:\n' + stderr)
+OSError: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+
+[2025-07-22 10:43:57,645] INFO - [Batch 5] DL2242512AL30143 - Invoices Found: ['DL2242512AL30143']
+[2025-07-22 10:43:59,976] INFO - [Batch 2] KA2242512AG36547 - Invoices Found: ['KA2242512AG36547']
+[2025-07-22 10:44:00,097] ERROR - [Batch 3] ❌ Error processing invoice MH2242512AL44069: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+Traceback (most recent call last):
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 82, in process_batch
+    self.make_data_fetch_request(email, invoice)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 191, in make_data_fetch_request
+    pdfkit.from_file(html_path, pdf_path)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/api.py", line 51, in from_file
+    return r.to_pdf(output_path)
+           ~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 201, in to_pdf
+    self.handle_error(exit_code, stderr)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 155, in handle_error
+    raise IOError('wkhtmltopdf reported an error:\n' + stderr)
+OSError: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+
+[2025-07-22 10:44:01,055] INFO - [Batch 1] TN2242512AG02026 - Invoices Found: ['TN2242512AG02026']
+[2025-07-22 10:44:01,183] ERROR - [Batch 4] ❌ Error processing invoice JS2242512AA73375: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+Traceback (most recent call last):
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 82, in process_batch
+    self.make_data_fetch_request(email, invoice)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 191, in make_data_fetch_request
+    pdfkit.from_file(html_path, pdf_path)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/api.py", line 51, in from_file
+    return r.to_pdf(output_path)
+           ~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 201, in to_pdf
+    self.handle_error(exit_code, stderr)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 155, in handle_error
+    raise IOError('wkhtmltopdf reported an error:\n' + stderr)
+OSError: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+
+[2025-07-22 10:44:01,759] ERROR - [Batch 5] ❌ Error processing invoice DL2242512AL30143: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+Traceback (most recent call last):
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 82, in process_batch
+    self.make_data_fetch_request(email, invoice)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 191, in make_data_fetch_request
+    pdfkit.from_file(html_path, pdf_path)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/api.py", line 51, in from_file
+    return r.to_pdf(output_path)
+           ~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 201, in to_pdf
+    self.handle_error(exit_code, stderr)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 155, in handle_error
+    raise IOError('wkhtmltopdf reported an error:\n' + stderr)
+OSError: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+
+[2025-07-22 10:44:04,171] INFO - [Batch 3] MH2242512AL20442 - Invoices Found: ['MH2242512AL20442']
+[2025-07-22 10:44:06,697] ERROR - [Batch 2] ❌ Error processing invoice KA2242512AG36547: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+Traceback (most recent call last):
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 82, in process_batch
+    self.make_data_fetch_request(email, invoice)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 191, in make_data_fetch_request
+    pdfkit.from_file(html_path, pdf_path)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/api.py", line 51, in from_file
+    return r.to_pdf(output_path)
+           ~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 201, in to_pdf
+    self.handle_error(exit_code, stderr)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 155, in handle_error
+    raise IOError('wkhtmltopdf reported an error:\n' + stderr)
+OSError: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+
+[2025-07-22 10:44:07,054] INFO - [Batch 5] WB2242501AF92989 - Invoices Found: ['WB2242501AF92989']
+[2025-07-22 10:44:07,240] INFO - [Batch 4] JS2242512AA72402 - Invoices Found: ['JS2242512AA72402']
+[2025-07-22 10:44:07,559] ERROR - [Batch 1] ❌ Error processing invoice TN2242512AG02026: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+Traceback (most recent call last):
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 82, in process_batch
+    self.make_data_fetch_request(email, invoice)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 191, in make_data_fetch_request
+    pdfkit.from_file(html_path, pdf_path)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/api.py", line 51, in from_file
+    return r.to_pdf(output_path)
+           ~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 201, in to_pdf
+    self.handle_error(exit_code, stderr)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 155, in handle_error
+    raise IOError('wkhtmltopdf reported an error:\n' + stderr)
+OSError: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+
+[2025-07-22 10:44:08,410] ERROR - [Batch 3] ❌ Error processing invoice MH2242512AL20442: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+Traceback (most recent call last):
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 82, in process_batch
+    self.make_data_fetch_request(email, invoice)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 191, in make_data_fetch_request
+    pdfkit.from_file(html_path, pdf_path)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/api.py", line 51, in from_file
+    return r.to_pdf(output_path)
+           ~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 201, in to_pdf
+    self.handle_error(exit_code, stderr)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 155, in handle_error
+    raise IOError('wkhtmltopdf reported an error:\n' + stderr)
+OSError: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+
+[2025-07-22 10:44:10,733] INFO - [Batch 2] MH2242512AL70601 - Invoices Found: ['MH2242512AL70601']
+[2025-07-22 10:44:11,722] ERROR - [Batch 5] ❌ Error processing invoice WB2242501AF92989: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+Traceback (most recent call last):
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 82, in process_batch
+    self.make_data_fetch_request(email, invoice)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 191, in make_data_fetch_request
+    pdfkit.from_file(html_path, pdf_path)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/api.py", line 51, in from_file
+    return r.to_pdf(output_path)
+           ~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 201, in to_pdf
+    self.handle_error(exit_code, stderr)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 155, in handle_error
+    raise IOError('wkhtmltopdf reported an error:\n' + stderr)
+OSError: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+
+[2025-07-22 10:44:12,496] INFO - [Batch 3] GJ2242512AD19147 - Invoices Found: ['GJ2242512AD19147']
+[2025-07-22 10:44:13,896] INFO - [Batch 1] KA2242512AG82037 - Invoices Found: ['KA2242512AG82037']
+[2025-07-22 10:44:14,174] ERROR - [Batch 4] ❌ Error processing invoice JS2242512AA72402: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+Traceback (most recent call last):
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 82, in process_batch
+    self.make_data_fetch_request(email, invoice)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 191, in make_data_fetch_request
+    pdfkit.from_file(html_path, pdf_path)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/api.py", line 51, in from_file
+    return r.to_pdf(output_path)
+           ~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 201, in to_pdf
+    self.handle_error(exit_code, stderr)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 155, in handle_error
+    raise IOError('wkhtmltopdf reported an error:\n' + stderr)
+OSError: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+
+[2025-07-22 10:44:15,556] ERROR - [Batch 2] ❌ Error processing invoice MH2242512AL70601: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+Traceback (most recent call last):
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 82, in process_batch
+    self.make_data_fetch_request(email, invoice)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 191, in make_data_fetch_request
+    pdfkit.from_file(html_path, pdf_path)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/api.py", line 51, in from_file
+    return r.to_pdf(output_path)
+           ~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 201, in to_pdf
+    self.handle_error(exit_code, stderr)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 155, in handle_error
+    raise IOError('wkhtmltopdf reported an error:\n' + stderr)
+OSError: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+
+[2025-07-22 10:44:16,501] INFO - [Batch 5] KA2242503AK15006 - Invoices Found: ['KA2242503AK15006']
+[2025-07-22 10:44:18,862] ERROR - [Batch 3] ❌ Error processing invoice GJ2242512AD19147: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+Traceback (most recent call last):
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 82, in process_batch
+    self.make_data_fetch_request(email, invoice)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 191, in make_data_fetch_request
+    pdfkit.from_file(html_path, pdf_path)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/api.py", line 51, in from_file
+    return r.to_pdf(output_path)
+           ~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 201, in to_pdf
+    self.handle_error(exit_code, stderr)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 155, in handle_error
+    raise IOError('wkhtmltopdf reported an error:\n' + stderr)
+OSError: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+
+[2025-07-22 10:44:18,862] ERROR - [Batch 1] ❌ Error processing invoice KA2242512AG82037: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+Traceback (most recent call last):
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 82, in process_batch
+    self.make_data_fetch_request(email, invoice)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 191, in make_data_fetch_request
+    pdfkit.from_file(html_path, pdf_path)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/api.py", line 51, in from_file
+    return r.to_pdf(output_path)
+           ~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 201, in to_pdf
+    self.handle_error(exit_code, stderr)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 155, in handle_error
+    raise IOError('wkhtmltopdf reported an error:\n' + stderr)
+OSError: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+
+[2025-07-22 10:44:19,252] INFO - [Batch 2] MH2242512AL67032 - Invoices Found: ['MH2242512AL67032']
+[2025-07-22 10:44:19,843] INFO - [Batch 4] WB2242512AF06856 - Invoices Found: ['WB2242512AF06856']
+[2025-07-22 10:44:20,762] ERROR - [Batch 5] ❌ Error processing invoice KA2242503AK15006: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+Traceback (most recent call last):
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 82, in process_batch
+    self.make_data_fetch_request(email, invoice)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 191, in make_data_fetch_request
+    pdfkit.from_file(html_path, pdf_path)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/api.py", line 51, in from_file
+    return r.to_pdf(output_path)
+           ~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 201, in to_pdf
+    self.handle_error(exit_code, stderr)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 155, in handle_error
+    raise IOError('wkhtmltopdf reported an error:\n' + stderr)
+OSError: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+
+[2025-07-22 10:44:22,358] INFO - [Batch 3] GJ2242512AD13729 - Invoices Found: ['GJ2242512AD13729']
+[2025-07-22 10:44:24,070] ERROR - [Batch 4] ❌ Error processing invoice WB2242512AF06856: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+Traceback (most recent call last):
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 82, in process_batch
+    self.make_data_fetch_request(email, invoice)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 191, in make_data_fetch_request
+    pdfkit.from_file(html_path, pdf_path)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/api.py", line 51, in from_file
+    return r.to_pdf(output_path)
+           ~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 201, in to_pdf
+    self.handle_error(exit_code, stderr)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 155, in handle_error
+    raise IOError('wkhtmltopdf reported an error:\n' + stderr)
+OSError: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+
+[2025-07-22 10:44:24,128] INFO - [Batch 5] MH2242503AQ72802 - Invoices Found: ['MH2242503AQ72802']
+[2025-07-22 10:44:26,463] INFO - [Batch 1] KA2242512AG79255 - Invoices Found: ['KA2242512AG79255']
+[2025-07-22 10:44:26,683] ERROR - [Batch 3] ❌ Error processing invoice GJ2242512AD13729: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+Traceback (most recent call last):
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 82, in process_batch
+    self.make_data_fetch_request(email, invoice)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 191, in make_data_fetch_request
+    pdfkit.from_file(html_path, pdf_path)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/api.py", line 51, in from_file
+    return r.to_pdf(output_path)
+           ~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 201, in to_pdf
+    self.handle_error(exit_code, stderr)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 155, in handle_error
+    raise IOError('wkhtmltopdf reported an error:\n' + stderr)
+OSError: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: ProtocolUnknownError
+
+[2025-07-22 10:44:26,880] ERROR - [Batch 2] ❌ Error processing invoice MH2242512AL67032: wkhtmltopdf exited with non-zero code -2. error:
+Unknown Error
+Traceback (most recent call last):
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 82, in process_batch
+    self.make_data_fetch_request(email, invoice)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 191, in make_data_fetch_request
+    pdfkit.from_file(html_path, pdf_path)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/api.py", line 51, in from_file
+    return r.to_pdf(output_path)
+           ~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 201, in to_pdf
+    self.handle_error(exit_code, stderr)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 158, in handle_error
+    raise IOError("wkhtmltopdf exited with non-zero code {0}. error:\n{1}".format(exit_code, error_msg))
+OSError: wkhtmltopdf exited with non-zero code -2. error:
+Unknown Error
+[2025-07-22 10:44:27,892] INFO - [Batch 4] WB2242512AE92192 - Invoices Found: ['WB2242512AE92192']
+[2025-07-22 10:44:27,893] ERROR - [Batch 5] ❌ Error processing invoice MH2242503AQ72802: wkhtmltopdf exited with non-zero code -2. error:
+Unknown Error
+Traceback (most recent call last):
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 82, in process_batch
+    self.make_data_fetch_request(email, invoice)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/upwork/08_ashish_kumar_indigo_bot/indigo_bot/main2.py", line 191, in make_data_fetch_request
+    pdfkit.from_file(html_path, pdf_path)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/api.py", line 51, in from_file
+    return r.to_pdf(output_path)
+           ~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 201, in to_pdf
+    self.handle_error(exit_code, stderr)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/rishabh/Programs/0_venv/lib/python3.13/site-packages/pdfkit/pdfkit.py", line 158, in handle_error
+    raise IOError("wkhtmltopdf exited with non-zero code {0}. error:\n{1}".format(exit_code, error_msg))
+OSError: wkhtmltopdf exited with non-zero code -2. error:
+Unknown Error
